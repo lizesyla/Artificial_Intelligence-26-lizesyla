@@ -1,0 +1,21 @@
+========================================================================
+SOCIAL GOLFERS PROBLEM - DFS WITH BACKTRACKING
+Run at 2026-10-24 17:42:37, Python 3.10.12
+========================================================================
+Instance          : N=8 golfers, G=2 groups, S=4 per group
+Pairs total       : C(8,2) = 28, new pairs per week = G*C(S,2) = 12
+Upper bound       : floor((N-1)/(S-1)) = 2 weeks
+Possible groups   : C(N,S) = 70
+Weekly partitions : N!/((S!)^G G!) = 35 (~35)
+2-week schedules (no pair constraint): P^W ~ 1225
+
+Target weeks      : 2
+Symmetry breaking : False   value order: ascending
+Limits            : max_nodes=10000000, time_limit=30.0s
+Status            : NO_SOLUTION
+Nodes generated   : 1,722,400
+Backtracks        : 1,722,400
+Max depth (slots) : 10 of 16  (complete weeks reached: 1)
+Time              : 7.4398 s
+
+The complete search tree was explored: NO valid 2-week schedule exists (proof by exhaustive search).

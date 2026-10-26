@@ -1,0 +1,27 @@
+========================================================================
+SOCIAL GOLFERS PROBLEM - DFS WITH BACKTRACKING
+Run at 2026-10-24 17:44:16, Python 3.10.12
+========================================================================
+Instance          : N=32 golfers, G=8 groups, S=4 per group
+Pairs total       : C(32,2) = 496, new pairs per week = G*C(S,2) = 48
+Upper bound       : floor((N-1)/(S-1)) = 10 weeks
+Possible groups   : C(N,S) = 35960
+Weekly partitions : N!/((S!)^G G!) = 59287247761257140625 (~5.928e19)
+
+  W status                  nodes     backtracks   time (s)
+  1 FOUND                      32              0     0.0002
+  2 FOUND                      64              0     0.0004
+  3 FOUND                      96              0     0.0005
+  4 FOUND                     128              0     0.0007
+  5 FOUND                     160              0     0.0009
+  6 LIMIT_REACHED       9,973,760      9,973,609    60.0028
+
+Best number of weeks found by DFS: 5
+Conclusion: the search for 6 weeks hit the limit -> maximum is at least 5, but NOT proven (upper bound 10).
+
+Best schedule:
+Week  1: [ 1  2  3  4]  [ 5  6  7  8]  [ 9 10 11 12]  [13 14 15 16]  [17 18 19 20]  [21 22 23 24]  [25 26 27 28]  [29 30 31 32]
+Week  2: [ 1  5  9 13]  [ 2  6 10 14]  [ 3  7 11 15]  [ 4  8 12 16]  [17 21 25 29]  [18 22 26 30]  [19 23 27 31]  [20 24 28 32]
+Week  3: [ 1  6 11 16]  [ 2  5 12 15]  [ 3  8  9 14]  [ 4  7 10 13]  [17 22 27 32]  [18 21 28 31]  [19 24 25 30]  [20 23 26 29]
+Week  4: [ 1  7 12 14]  [ 2  8 11 13]  [ 3  5 10 16]  [ 4  6  9 15]  [17 23 28 30]  [18 24 27 29]  [19 21 26 32]  [20 22 25 31]
+Week  5: [ 1  8 10 15]  [ 2  7  9 16]  [ 3  6 12 13]  [ 4  5 11 14]  [17 24 26 31]  [18 23 25 32]  [19 22 28 29]  [20 21 27 30]

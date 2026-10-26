@@ -1,0 +1,25 @@
+test_counts (__main__.TestMath) ... ok
+test_partition_count_by_enumeration (__main__.TestMath) ... ok
+test_4_golfers_max_3 (__main__.TestSolver) ... ok
+test_9_golfers_kirkman_4_weeks (__main__.TestSolver) ... ok
+test_bad_config (__main__.TestSolver) ... ok
+test_find_max_small_is_proven (__main__.TestSolver) ... ok
+test_full_instance_one_week (__main__.TestSolver) ... ok
+test_limit_is_reported (__main__.TestSolver) ... ok
+test_random_order_still_valid (__main__.TestSolver) ... ok
+test_small_8_golfers_one_week (__main__.TestSolver) ... ok
+test_small_8_golfers_two_weeks_impossible (__main__.TestSolver) ... ok
+test_without_symmetry_breaking_same_answer (__main__.TestSolver) ... ok
+test_invalid_golfer_number (__main__.TestValidation) ... ok
+test_missing_and_duplicate_golfer (__main__.TestValidation) ... ok
+test_repeated_pair (__main__.TestValidation) ... ok
+test_valid_32_golfer_week (__main__.TestValidation) ... ok
+test_valid_schedule (__main__.TestValidation) ... ok
+test_wrong_group_size (__main__.TestValidation) ... ok
+test_wrong_number_of_groups (__main__.TestValidation) ... ok
+test_wrong_number_of_weeks (__main__.TestValidation) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 7.234s
+
+OK

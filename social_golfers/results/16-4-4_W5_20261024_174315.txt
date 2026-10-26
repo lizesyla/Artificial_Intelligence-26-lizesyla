@@ -1,0 +1,29 @@
+========================================================================
+SOCIAL GOLFERS PROBLEM - DFS WITH BACKTRACKING
+Run at 2026-10-24 17:43:15, Python 3.10.12
+========================================================================
+Instance          : N=16 golfers, G=4 groups, S=4 per group
+Pairs total       : C(16,2) = 120, new pairs per week = G*C(S,2) = 24
+Upper bound       : floor((N-1)/(S-1)) = 5 weeks
+Possible groups   : C(N,S) = 1820
+Weekly partitions : N!/((S!)^G G!) = 2627625 (~2.627e6)
+5-week schedules (no pair constraint): P^W ~ 1.252e32
+
+Target weeks      : 5
+Symmetry breaking : True   value order: ascending
+Limits            : max_nodes=10000000, time_limit=30.0s
+Status            : FOUND
+Nodes generated   : 80
+Backtracks        : 0
+Max depth (slots) : 80 of 80  (complete weeks reached: 5)
+Time              : 0.0004 s
+
+Schedule:
+Week  1: [ 1  2  3  4]  [ 5  6  7  8]  [ 9 10 11 12]  [13 14 15 16]
+Week  2: [ 1  5  9 13]  [ 2  6 10 14]  [ 3  7 11 15]  [ 4  8 12 16]
+Week  3: [ 1  6 11 16]  [ 2  5 12 15]  [ 3  8  9 14]  [ 4  7 10 13]
+Week  4: [ 1  7 12 14]  [ 2  8 11 13]  [ 3  5 10 16]  [ 4  6  9 15]
+Week  5: [ 1  8 10 15]  [ 2  7  9 16]  [ 3  6 12 13]  [ 4  5 11 14]
+
+Independent validation: VALID
+NOTE: this shows that 5 weeks are POSSIBLE. It does not by itself prove that 5 is the maximum.
