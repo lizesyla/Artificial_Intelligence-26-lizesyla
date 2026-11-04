@@ -17,6 +17,8 @@
 cd latin_square
 python latin_square.py --test
 python latin_square.py 5                    # hyrja e detyrës: n = 5
+python latin_square.py 20                   # çdo n: mënyra zgjidhet automatikisht (seksioni 6.1)
+python latin_square.py 7 --start-depth 0    # detyro IDDFS të pastër nga L = 0
 python latin_square.py 6 --save
 python latin_square.py 4 --no-symmetry --all --start-depth 16   # numëron të 576 katrorët e rendit 4
 python latin_square.py --grid "1.../.2../..3./...4"             # plotëson një katror të pjesshëm
@@ -152,6 +154,24 @@ DLS(k, L):                                   # DFS me limit thellësie
 
 Me renditje të rastësishme, i njëjti seed përdoret në çdo iteracion, kështu që çdo DLS e sheh pemën në të njëjtin rend.
 
+### 6.1 Zgjedhja automatike e mënyrës (komanda `python latin_square.py n`)
+
+Që programi të printojë katror për **çdo** n të dhënë, komanda pa opsione e zgjedh vetë mënyrën e nisjes, bazuar në matjet e seksionit 9:
+
+| Kushti | Limiti i parë L0 | Rendi i fëmijëve | Arsyeja |
+|---|---|---|---|
+| E ≤ 25 (n ≤ 6) | 0 — IDDFS i plotë | rritës | iteracionet e para janë të përballueshme (n = 6: 2.8 s) |
+| E > 25, n < 15 | E — vetëm iteracioni i fundit | rritës | për n = 7, IDDFS nga L = 0 nuk mbaroi as për 150 s |
+| E > 25, n ≥ 15 | E | i rastësishëm, seed 0 | renditja rritëse "thrash"-on për n ≥ 15 |
+
+Vërejtje për këtë zgjedhje:
+
+- Programi e printon mënyrën e zgjedhur dhe arsyen në rreshtin `Mode`.
+- Algoritmi mbetet IDDFS me backtracking: kur L0 = E, IDDFS ekzekuton vetëm iteracionin e tij të fundit, i cili është DLS me limit E.
+- Opsionet `--start-depth` dhe `--order` e anashkalojnë zgjedhjen automatike. Për shembull, `--start-depth 0` detyron IDDFS të pastër për çdo n.
+- Testet `test_auto_mode` dhe `test_cli_prints_square_for_large_n` e verifikojnë këtë sjellje.
+- Në matjet tona, kjo mënyrë printoi katror të vlefshëm për n = 7, 14, 20 dhe 30. Për n = 40, renditja e rastësishme me seed 0, 1 dhe 2 nuk gjeti zgjidhje brenda 20 s (seksioni 10).
+
 ---
 
 ## 7. Kompleksiteti
@@ -258,7 +278,8 @@ Për n = 7, iteracioni me L = 20 vetëm gjeneroi 17.8 milionë nyje (54 s), dhe 
 
 **Kufizimet:**
 
-- IDDFS nga L = 0 është praktik vetëm për n ≤ 6, sepse iteracionet e para janë shterruese (*exhaustive*).
+- IDDFS nga L = 0 është praktik vetëm për n ≤ 6, sepse iteracionet e para janë shterruese (*exhaustive*). Prandaj komanda pa opsione, për n ≥ 7, e nis IDDFS-in direkt në L = E (seksioni 6.1).
+- Për n shumë të mëdha (n = 40 në provat tona) edhe DLS-i i fundit mund ta kalojë limitin e kohës; atëherë programi raporton `LIMIT_REACHED` në vend që të shpikë një rezultat.
 - DFS-i kronologjik me rend rritës ngec për n ≥ 15. Rendi i rastësishëm ndihmon, por nuk garanton kohë të vogël (seed 2 për n = 30 kërkoi 1.3 milionë nyje).
 - Rezultatet me seed janë vetëm disa mostra, jo një shpërndarje statistikore.
 - Kohët janë nga një kompjuter i vetëm.

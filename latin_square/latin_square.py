@@ -25,9 +25,10 @@ IDDFS  : run DLS with L = 0, 1, 2, ... until a solution is found.
 Usage (run inside the latin_square/ folder)
 -------------------------------------------
     python latin_square.py 5                      # the assignment: input n = 5
+    python latin_square.py 20                     # any n: the mode is chosen automatically
     python latin_square.py 6 --save
     python latin_square.py 4 --no-symmetry --all  # count all 576 squares of order 4
-    python latin_square.py 7 --start-depth 0 --time-limit 60
+    python latin_square.py 7 --start-depth 0 --time-limit 60   # force pure IDDFS
     python latin_square.py 20 --start-depth 361 --random --seed 0   # only the last DLS
     python latin_square.py --grid "1.../.2../..3./...4"   # complete a partial square
     python latin_square.py --experiment --save    # the tables used in report.md
@@ -327,6 +328,30 @@ def solve(cfg: Config) -> Result:
     return LatinIDDFS(cfg).solve()
 
 
+# Automatic choice used by the command line when --start-depth / --order are
+# not given. Pure IDDFS from L = 0 is only practical while the goal depth is
+# small, because every iteration with L < E explores its whole tree without
+# finding anything (see report.md, sections 7 and 9).
+AUTO_MAX_EMPTY_FOR_IDDFS = 25      # = n 6 with symmetry breaking (finished in ~3 s)
+AUTO_RANDOM_FROM_N = 15            # ascending order thrashes from n = 15 on
+
+
+def auto_mode(n: int, givens=None, symmetry_breaking: bool = True):
+    """Returns (start_depth, value_order, explanation)."""
+    E = LatinIDDFS(Config(n=n, givens=givens, symmetry_breaking=symmetry_breaking)).E
+    if E <= AUTO_MAX_EMPTY_FOR_IDDFS:
+        return 0, "ascending", (f"pure IDDFS: depth limits L = 0, 1, ..., {E} "
+                                f"(goal depth E = {E})")
+    order = "random" if n >= AUTO_RANDOM_FROM_N else "ascending"
+    return E, order, (
+        f"goal depth E = {E} is too deep for IDDFS from L = 0 (every iteration with L < E "
+        f"must explore its whole tree; n = 7 did not finish in 150 s). IDDFS is started "
+        f"directly at L = E, so only the last depth-limited DFS with backtracking runs"
+        + (", with random order of the children (seed 0), because ascending order "
+           "thrashes for n >= 15" if order == "random" else "")
+        + ". Use --start-depth 0 to force pure IDDFS.")
+
+
 # =============================================================================
 # 4. OUTPUT AND SAVING
 # =============================================================================
@@ -491,6 +516,21 @@ class TestIDDFS(unittest.TestCase):
     def test_larger_n_with_dfs_start(self):
         self.check(n=12, start_depth=11 * 11)
 
+    def test_auto_mode(self):
+        self.assertEqual(auto_mode(5)[:2], (0, "ascending"))          # pure IDDFS
+        self.assertEqual(auto_mode(6)[:2], (0, "ascending"))
+        self.assertEqual(auto_mode(7)[:2], (36, "ascending"))         # last iteration only
+        self.assertEqual(auto_mode(20)[:2], (361, "random"))
+        for n in (7, 10, 20):
+            start, order, _ = auto_mode(n)
+            self.check(n=n, start_depth=start, value_order=order, time_limit=30)
+
+    def test_cli_prints_square_for_large_n(self):
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            main(["20"])
+        self.assertIn("Independent validation: VALID", buf.getvalue())
+
     def test_random_order(self):
         for seed in range(3):
             r = self.check(n=6, value_order="random", seed=seed)
@@ -513,10 +553,13 @@ def main(argv=None) -> int:
     ap.add_argument("--grid", help="partial square to complete, rows separated by '/'")
     ap.add_argument("--no-symmetry", action="store_true",
                     help="do not fix the first row/column (empty grid only)")
-    ap.add_argument("--start-depth", type=int, default=0)
+    ap.add_argument("--start-depth", type=int, default=None,
+                    help="first depth limit; default: automatic (0 for small n)")
     ap.add_argument("--step", type=int, default=1)
     ap.add_argument("--all", action="store_true", help="count all solutions (last iteration)")
-    ap.add_argument("--random", action="store_true", help="random order of the children")
+    ap.add_argument("--order", choices=["auto", "ascending", "random"], default="auto",
+                    help="order of the children (default: automatic)")
+    ap.add_argument("--random", action="store_true", help="same as --order random")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--max-nodes", type=int, default=20_000_000, help="0 = unlimited")
     ap.add_argument("--time-limit", type=float, default=60.0, help="0 = unlimited")
@@ -543,10 +586,17 @@ def main(argv=None) -> int:
     else:
         givens = parse_grid(a.grid) if a.grid else None
         n = len(givens) if givens else a.n
+        if a.random:
+            a.order = "random"
+        auto_start, auto_order, note = auto_mode(n, givens, not a.no_symmetry)
+        start = auto_start if a.start_depth is None else a.start_depth
+        order = auto_order if a.order == "auto" else a.order
+        if a.start_depth is not None or a.order != "auto":
+            note = "chosen on the command line"
+        mode_note = f"Mode              : start depth {start}, {order} order - {note}"
         cfgs.append(Config(n=n, givens=givens, symmetry_breaking=not a.no_symmetry,
-                           start_depth=a.start_depth, step=a.step, find_all=a.all,
-                           value_order="random" if a.random else "ascending", seed=a.seed,
-                           **lim))
+                           start_depth=start, step=a.step, find_all=a.all,
+                           value_order=order, seed=a.seed, **lim))
 
     buf = io.StringIO()
     rows = []
@@ -566,6 +616,7 @@ def main(argv=None) -> int:
                       f"nodes total={res.nodes:>12,}  last iter={last.nodes if last else 0:>12,} "
                       f"t={res.elapsed:8.3f}s {res.message}")
             else:
+                print(mode_note)
                 print_run(cfg, res)
                 print()
     text = buf.getvalue()
@@ -573,7 +624,8 @@ def main(argv=None) -> int:
     if a.save:
         tag = "experiment" if a.experiment else f"n{cfgs[0].n}" + (
             "_grid" if cfgs[0].givens else "") + ("_nosym" if a.no_symmetry else "") + (
-            f"_start{a.start_depth}" if a.start_depth else "")
+            f"_start{cfgs[0].start_depth}" if cfgs[0].start_depth else "") + (
+            f"_rand{cfgs[0].seed}" if cfgs[0].value_order == "random" else "")
         print(f"Saved to {save_run(text, tag, rows)} (and results/runs.csv)")
     return 0
 

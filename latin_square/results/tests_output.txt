@@ -1,3 +1,5 @@
+test_auto_mode (__main__.TestIDDFS) ... ok
+test_cli_prints_square_for_large_n (__main__.TestIDDFS) ... ok
 test_completion_with_givens (__main__.TestIDDFS) ... ok
 test_counts_all_latin_squares (__main__.TestIDDFS) ... ok
 test_counts_reduced_squares (__main__.TestIDDFS) ... ok
@@ -14,6 +16,6 @@ test_bad_squares (__main__.TestValidation) ... ok
 test_parse_and_partial (__main__.TestValidation) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 15.632s
+Ran 16 tests in 14.981s
 
 OK

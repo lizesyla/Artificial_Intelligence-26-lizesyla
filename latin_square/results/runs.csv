@@ -28,3 +28,5 @@ timestamp,n,givens,symmetry,order,seed,start_depth,step,find_all,status,solution
 20261029_182151,30,False,True,random,0,841,1,False,FOUND,1,1,841,109455,109455,0.5717,,3.10.12
 20261029_182151,30,False,True,random,1,841,1,False,FOUND,1,1,841,38693,38693,0.1984,,3.10.12
 20261029_182158,30,False,True,random,2,841,1,False,FOUND,1,1,841,1331169,1331169,7.1966,,3.10.12
+20261104_145819,7,False,True,ascending,0,36,1,False,FOUND,1,1,36,118,118,0.0004,,3.10.12
+20261104_145819,20,False,True,random,0,361,1,False,FOUND,1,1,361,1510,1510,0.0067,,3.10.12
