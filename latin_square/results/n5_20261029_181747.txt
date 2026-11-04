@@ -1,0 +1,42 @@
+========================================================================
+LATIN SQUARE - IDDFS WITH BACKTRACKING
+Run at 2026-10-29 18:17:47, Python 3.10.12
+========================================================================
+Input n           : 5
+Cells             : 25, fixed by symmetry breaking: 9, filled by search (goal depth) E = 16
+Naive n^(n^2)     : 2.98e17   tree bound sum n^k: 1.90e11
+Latin squares L(n): 161,280   reduced R(n): 56
+IDDFS             : start depth 0, step 1, value order ascending, find all: False, limits: nodes=20000000, time=60.0s
+
+ limit L          nodes      cutoffs    dead ends  max depth   time (s)
+       0              0            1            0          0     0.0000
+       1              4            4            0          1     0.0000
+       2             13            9            0          2     0.0000
+       3             27           14            0          3     0.0001
+       4             38           11            3          4     0.0001
+       5             63           25            3          5     0.0001
+       6            124           61            3          6     0.0002
+       7            200           76            8          7     0.0004
+       8            246           46           38          8     0.0005
+       9            322           76           38          9     0.0007
+      10            432          110           40         10     0.0008
+      11            568          136           46         11     0.0011
+      12            624           56          126         12     0.0012
+      13            680           56          126         13     0.0014
+      14            736           56          126         14     0.0015
+      15            792           56          126         15     0.0016
+      16             28            0            7         16     0.0001
+
+Status            : FOUND
+Explanation       : Found a Latin square at depth 16 (iteration with limit 16).
+Nodes, all iter.  : 4,897   (last iteration alone: 28; overhead of the earlier iterations: 4,869)
+Time              : 0.0101 s
+
+Latin square:
+1 2 3 4 5
+2 1 4 5 3
+3 4 5 1 2
+4 5 2 3 1
+5 3 1 2 4
+Independent validation: VALID
+

@@ -1,0 +1,52 @@
+========================================================================
+LATIN SQUARE - IDDFS WITH BACKTRACKING
+Run at 2026-10-29 18:17:47, Python 3.10.12
+========================================================================
+Input n           : 6
+Cells             : 36, fixed by symmetry breaking: 11, filled by search (goal depth) E = 25
+Naive n^(n^2)     : 1.03e28   tree bound sum n^k: 3.41e19
+Latin squares L(n): 812,851,200   reduced R(n): 9,408
+IDDFS             : start depth 0, step 1, value order ascending, find all: False, limits: nodes=20000000, time=60.0s
+
+ limit L          nodes      cutoffs    dead ends  max depth   time (s)
+       0              0            1            0          0     0.0000
+       1              5            5            0          1     0.0000
+       2             21           16            0          2     0.0000
+       3             60           39            0          3     0.0001
+       4            124           64            0          4     0.0002
+       5            177           53           11          5     0.0003
+       6            347          170           11          6     0.0007
+       7            910          563           11          7     0.0015
+       8          2,056        1,146           11          8     0.0035
+       9          3,610        1,554           81          9     0.0066
+      10          4,674        1,064          571         10     0.0093
+      11          7,306        2,632          571         11     0.0145
+      12         12,966        5,660          571         12     0.0239
+      13         24,082       11,116          571         13     0.0460
+      14         36,122       12,040        2,359         14     0.0705
+      15         42,674        6,552        7,847         15     0.0959
+      16         54,082       11,408        7,847         16     0.1230
+      17         71,490       17,408        8,183         17     0.1538
+      18         93,378       21,888        9,863         18     0.2172
+      19        116,466       23,088       13,127         19     0.2458
+      20        125,874        9,408       26,807         20     0.2783
+      21        135,282        9,408       26,807         21     0.3117
+      22        144,690        9,408       26,807         22     0.3869
+      23        154,098        9,408       26,807         23     0.3722
+      24        163,506        9,408       26,807         24     0.4109
+      25             51            0           14         25     0.0001
+
+Status            : FOUND
+Explanation       : Found a Latin square at depth 25 (iteration with limit 25).
+Nodes, all iter.  : 1,194,051   (last iteration alone: 51; overhead of the earlier iterations: 1,194,000)
+Time              : 2.7737 s
+
+Latin square:
+1 2 3 4 5 6
+2 1 4 3 6 5
+3 4 5 6 1 2
+4 3 6 5 2 1
+5 6 1 2 3 4
+6 5 2 1 4 3
+Independent validation: VALID
+

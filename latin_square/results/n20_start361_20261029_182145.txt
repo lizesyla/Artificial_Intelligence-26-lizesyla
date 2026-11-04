@@ -1,0 +1,17 @@
+========================================================================
+LATIN SQUARE - IDDFS WITH BACKTRACKING
+Run at 2026-10-29 18:21:25, Python 3.10.12
+========================================================================
+Input n           : 20
+Cells             : 400, fixed by symmetry breaking: 39, filled by search (goal depth) E = 361
+Naive n^(n^2)     : 2.58e520   tree bound sum n^k: 4.94e469
+IDDFS             : start depth 361, step 1, value order ascending, find all: False, limits: nodes=None, time=20.0s
+
+ limit L          nodes      cutoffs    dead ends  max depth   time (s)
+     361      5,234,688            0    1,926,168        151    20.0075
+
+Status            : LIMIT_REACHED
+Explanation       : Stopped by a limit (time limit 20.0s). Nothing is proven.
+Nodes, all iter.  : 5,234,688   (last iteration alone: 5,234,688; overhead of the earlier iterations: 0)
+Time              : 20.0075 s
+

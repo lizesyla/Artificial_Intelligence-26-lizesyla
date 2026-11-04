@@ -1,0 +1,31 @@
+========================================================================
+LATIN SQUARE - IDDFS WITH BACKTRACKING
+Run at 2026-10-29 18:20:59, Python 3.10.12
+========================================================================
+Input n           : 10
+Cells             : 100, fixed by symmetry breaking: 19, filled by search (goal depth) E = 81
+Naive n^(n^2)     : 1.00e100   tree bound sum n^k: 1.11e81
+Latin squares L(n): 9,982,437,658,213,039,871,725,064,756,920,320,000   reduced R(n): 7,580,721,483,160,132,811,489,280
+IDDFS             : start depth 81, step 1, value order ascending, find all: False, limits: nodes=None, time=20.0s
+
+ limit L          nodes      cutoffs    dead ends  max depth   time (s)
+      81          1,445            0          528         81     0.0039
+
+Status            : FOUND
+Explanation       : Found a Latin square at depth 81 (iteration with limit 81).
+Nodes, all iter.  : 1,445   (last iteration alone: 1,445; overhead of the earlier iterations: 0)
+Time              : 0.0039 s
+
+Latin square:
+ 1  2  3  4  5  6  7  8  9 10
+ 2  1  4  3  6  5  8  7 10  9
+ 3  4  1  2  7  8  9 10  5  6
+ 4  3  2  1  8  7 10  9  6  5
+ 5  6  7  8  9 10  1  2  3  4
+ 6  5  8  7 10  9  2  1  4  3
+ 7  8  9 10  3  4  5  6  1  2
+ 8  7 10  9  4  3  6  5  2  1
+ 9 10  5  6  1  2  3  4  7  8
+10  9  6  5  2  1  4  3  8  7
+Independent validation: VALID
+

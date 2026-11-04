@@ -1,0 +1,19 @@
+test_completion_with_givens (__main__.TestIDDFS) ... ok
+test_counts_all_latin_squares (__main__.TestIDDFS) ... ok
+test_counts_reduced_squares (__main__.TestIDDFS) ... ok
+test_formula_L_equals_n_fact_nm1_fact_R (__main__.TestIDDFS) ... ok
+test_iddfs_same_answer_as_single_dls (__main__.TestIDDFS) ... ok
+test_invalid_input (__main__.TestIDDFS) ... ok
+test_larger_n_with_dfs_start (__main__.TestIDDFS) ... ok
+test_limit_reported (__main__.TestIDDFS) ... ok
+test_no_solution_detected (__main__.TestIDDFS) ... ok
+test_random_order (__main__.TestIDDFS) ... ok
+test_small_n_found (__main__.TestIDDFS) ... ok
+test_assignment_example_is_latin (__main__.TestValidation) ... ok
+test_bad_squares (__main__.TestValidation) ... ok
+test_parse_and_partial (__main__.TestValidation) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 15.632s
+
+OK
