@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2892" height="996" font-family="Courier New, monospace" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="18" font-family="Helvetica" font-size="14">Missionaries &amp; Cannibals - BFS, pure tree search (first 40 nodes)</text>
+<line x1="1397.5" y1="75.0" x2="305.4" y2="121.0" stroke="#888" stroke-width="1"/>
+<text x="854.4" y="98.0" font-size="10" fill="#555">C</text>
+<line x1="1397.5" y1="75.0" x2="1397.5" y2="121.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1400.5" y="98.0" font-size="10" fill="#555">MC</text>
+<line x1="1397.5" y1="75.0" x2="2489.6" y2="121.0" stroke="#888" stroke-width="1"/>
+<text x="1946.5" y="98.0" font-size="10" fill="#555">CC</text>
+<line x1="2489.6" y1="156.0" x2="2294.0" y2="202.0" stroke="#888" stroke-width="1"/>
+<text x="2394.8" y="179.0" font-size="10" fill="#555">C</text>
+<line x1="2489.6" y1="156.0" x2="2685.2" y2="202.0" stroke="#888" stroke-width="1"/>
+<text x="2590.4" y="179.0" font-size="10" fill="#555">CC</text>
+<line x1="2685.2" y1="237.0" x2="2554.8" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="2623.0" y="260.0" font-size="10" fill="#555">C</text>
+<line x1="2685.2" y1="237.0" x2="2685.2" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="2688.2" y="260.0" font-size="10" fill="#555">MC</text>
+<line x1="2685.2" y1="237.0" x2="2815.6" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="2753.4" y="260.0" font-size="10" fill="#555">CC</text>
+<line x1="2294.0" y1="237.0" x2="2163.6" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="2231.8" y="260.0" font-size="10" fill="#555">M</text>
+<line x1="2294.0" y1="237.0" x2="2294.0" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="2297.0" y="260.0" font-size="10" fill="#555">C</text>
+<line x1="2294.0" y1="237.0" x2="2424.4" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="2362.2" y="260.0" font-size="10" fill="#555">CC</text>
+<line x1="1397.5" y1="156.0" x2="1055.2" y2="202.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1229.3" y="179.0" font-size="10" fill="#555">M</text>
+<line x1="1397.5" y1="156.0" x2="1739.8" y2="202.0" stroke="#888" stroke-width="1"/>
+<text x="1571.6" y="179.0" font-size="10" fill="#555">MC</text>
+<line x1="1739.8" y1="237.0" x2="1511.6" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="1628.7" y="260.0" font-size="10" fill="#555">C</text>
+<line x1="1739.8" y1="237.0" x2="1707.2" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="1726.5" y="260.0" font-size="10" fill="#555">MC</text>
+<line x1="1739.8" y1="237.0" x2="1968.0" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="1856.9" y="260.0" font-size="10" fill="#555">CC</text>
+<line x1="1968.0" y1="318.0" x2="1902.8" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1938.4" y="341.0" font-size="10" fill="#555">C</text>
+<line x1="1968.0" y1="318.0" x2="2033.2" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="2003.6" y="341.0" font-size="10" fill="#555">CC</text>
+<line x1="1707.2" y1="318.0" x2="1642.0" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1677.6" y="341.0" font-size="10" fill="#555">M</text>
+<line x1="1707.2" y1="318.0" x2="1772.4" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1742.8" y="341.0" font-size="10" fill="#555">MC</text>
+<line x1="1511.6" y1="318.0" x2="1511.6" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1514.6" y="341.0" font-size="10" fill="#555">C</text>
+<line x1="1055.2" y1="237.0" x2="794.4" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="927.8" y="260.0" font-size="10" fill="#555">M</text>
+<line x1="1055.2" y1="237.0" x2="1055.2" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="1058.2" y="260.0" font-size="10" fill="#555">C</text>
+<line x1="1055.2" y1="237.0" x2="1316.0" y2="283.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1188.6" y="260.0" font-size="10" fill="#555">CC</text>
+<line x1="1316.0" y1="318.0" x2="1250.8" y2="364.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1286.4" y="341.0" font-size="10" fill="#555">C</text>
+<line x1="1316.0" y1="318.0" x2="1381.2" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1351.6" y="341.0" font-size="10" fill="#555">CC</text>
+<line x1="1250.8" y1="399.0" x2="1250.8" y2="445.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="422.0" font-size="10" fill="#555">MM</text>
+<line x1="1250.8" y1="480.0" x2="1250.8" y2="526.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="503.0" font-size="10" fill="#555">MC</text>
+<line x1="1250.8" y1="561.0" x2="1250.8" y2="607.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="584.0" font-size="10" fill="#555">MM</text>
+<line x1="1250.8" y1="642.0" x2="1250.8" y2="688.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="665.0" font-size="10" fill="#555">C</text>
+<line x1="1250.8" y1="723.0" x2="1250.8" y2="769.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="746.0" font-size="10" fill="#555">CC</text>
+<line x1="1250.8" y1="804.0" x2="1250.8" y2="850.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="827.0" font-size="10" fill="#555">M</text>
+<line x1="1250.8" y1="885.0" x2="1250.8" y2="931.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1253.8" y="908.0" font-size="10" fill="#555">MC</text>
+<line x1="1055.2" y1="318.0" x2="990.0" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1025.6" y="341.0" font-size="10" fill="#555">C</text>
+<line x1="1055.2" y1="318.0" x2="1120.4" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="1090.8" y="341.0" font-size="10" fill="#555">CC</text>
+<line x1="794.4" y1="318.0" x2="729.2" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="764.8" y="341.0" font-size="10" fill="#555">M</text>
+<line x1="794.4" y1="318.0" x2="859.6" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="830.0" y="341.0" font-size="10" fill="#555">MC</text>
+<line x1="305.4" y1="156.0" x2="305.4" y2="202.0" stroke="#888" stroke-width="1"/>
+<text x="308.4" y="179.0" font-size="10" fill="#555">C</text>
+<line x1="305.4" y1="237.0" x2="77.2" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="194.3" y="260.0" font-size="10" fill="#555">C</text>
+<line x1="305.4" y1="237.0" x2="272.8" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="292.1" y="260.0" font-size="10" fill="#555">MC</text>
+<line x1="305.4" y1="237.0" x2="533.6" y2="283.0" stroke="#888" stroke-width="1"/>
+<text x="422.5" y="260.0" font-size="10" fill="#555">CC</text>
+<line x1="533.6" y1="318.0" x2="468.4" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="504.0" y="341.0" font-size="10" fill="#555">C</text>
+<line x1="533.6" y1="318.0" x2="598.8" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="569.2" y="341.0" font-size="10" fill="#555">CC</text>
+<line x1="272.8" y1="318.0" x2="207.6" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="243.2" y="341.0" font-size="10" fill="#555">M</text>
+<line x1="272.8" y1="318.0" x2="338.0" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="308.4" y="341.0" font-size="10" fill="#555">MC</text>
+<line x1="77.2" y1="318.0" x2="77.2" y2="364.0" stroke="#888" stroke-width="1"/>
+<text x="80.2" y="341.0" font-size="10" fill="#555">C</text>
+<rect x="1340.3" y="40.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1345.3" y="55.0">MMMCCC B|  -</text>
+<text x="1345.3" y="70.0" font-size="9" fill="#333">d=0 expanded #0</text>
+<rect x="2432.4" y="121.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2437.4" y="136.0">MMMC  |B CC</text>
+<text x="2437.4" y="151.0" font-size="9" fill="#333">d=1 expanded #3</text>
+<rect x="2628.0" y="202.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2633.0" y="217.0">MMMCCC B|  -</text>
+<text x="2633.0" y="232.0" font-size="9" fill="#333">d=2 expanded #8</text>
+<rect x="2758.4" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2763.4" y="298.0">MMMC  |B CC</text>
+<text x="2763.4" y="313.0" font-size="9" fill="#333">d=3 expanded #23</text>
+<rect x="2628.0" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2633.0" y="298.0">MMCC  |B MC</text>
+<text x="2633.0" y="313.0" font-size="9" fill="#333">d=3 expanded #22</text>
+<rect x="2497.6" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2502.6" y="298.0">MMMCC  |B C</text>
+<text x="2502.6" y="313.0" font-size="9" fill="#333">d=3 expanded #21</text>
+<rect x="2236.8" y="202.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2241.8" y="217.0">MMMCC B|  C</text>
+<text x="2241.8" y="232.0" font-size="9" fill="#333">d=2 expanded #7</text>
+<rect x="2367.2" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2372.2" y="298.0">MMM  |B CCC</text>
+<text x="2372.2" y="313.0" font-size="9" fill="#333">d=3 expanded #20</text>
+<rect x="2236.8" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2241.8" y="298.0">MMMC  |B CC</text>
+<text x="2241.8" y="313.0" font-size="9" fill="#333">d=3 expanded #19</text>
+<rect x="2106.4" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2111.4" y="298.0">MMCC  |B MC</text>
+<text x="2111.4" y="313.0" font-size="9" fill="#333">d=3 expanded #18</text>
+<rect x="1340.3" y="121.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1345.3" y="136.0">MMCC  |B MC</text>
+<text x="1345.3" y="151.0" font-size="9" fill="#333">d=1 expanded #2</text>
+<rect x="1682.6" y="202.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1687.6" y="217.0">MMMCCC B|  -</text>
+<text x="1687.6" y="232.0" font-size="9" fill="#333">d=2 expanded #6</text>
+<rect x="1910.8" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1915.8" y="298.0">MMMC  |B CC</text>
+<text x="1915.8" y="313.0" font-size="9" fill="#333">d=3 expanded #17</text>
+<rect x="1976.0" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1981.0" y="379.0">MMMCCC B|  -</text>
+<text x="1981.0" y="394.0" font-size="9" fill="#333">d=4 expanded #39</text>
+<rect x="1845.6" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1850.6" y="379.0">MMMCC B|  C</text>
+<text x="1850.6" y="394.0" font-size="9" fill="#333">d=4 expanded #38</text>
+<rect x="1650.0" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1655.0" y="298.0">MMCC  |B MC</text>
+<text x="1655.0" y="313.0" font-size="9" fill="#333">d=3 expanded #16</text>
+<rect x="1715.2" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1720.2" y="379.0">MMMCCC B|  -</text>
+<text x="1720.2" y="394.0" font-size="9" fill="#333">d=4 expanded #37</text>
+<rect x="1584.8" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1589.8" y="379.0">MMMCC B|  C</text>
+<text x="1589.8" y="394.0" font-size="9" fill="#333">d=4 expanded #36</text>
+<rect x="1454.4" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1459.4" y="298.0">MMMCC  |B C</text>
+<text x="1459.4" y="313.0" font-size="9" fill="#333">d=3 expanded #15</text>
+<rect x="1454.4" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1459.4" y="379.0">MMMCCC B|  -</text>
+<text x="1459.4" y="394.0" font-size="9" fill="#333">d=4 expanded #35</text>
+<rect x="998.0" y="202.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1003.0" y="217.0">MMMCC B|  C</text>
+<text x="1003.0" y="232.0" font-size="9" fill="#333">d=2 expanded #5</text>
+<rect x="1258.8" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1263.8" y="298.0">MMM  |B CCC</text>
+<text x="1263.8" y="313.0" font-size="9" fill="#333">d=3 expanded #14</text>
+<rect x="1324.0" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1329.0" y="379.0">MMMCC B|  C</text>
+<text x="1329.0" y="394.0" font-size="9" fill="#333">d=4 expanded #34</text>
+<rect x="1193.6" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="379.0">MMMC B|  CC</text>
+<text x="1198.6" y="394.0" font-size="9" fill="#333">d=4 expanded #33</text>
+<rect x="1193.6" y="445.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="460.0">MC  |B MMCC</text>
+<text x="1198.6" y="475.0" font-size="9" fill="#333">d=5 expanded #79</text>
+<rect x="1193.6" y="526.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="541.0">MMCC B|  MC</text>
+<text x="1198.6" y="556.0" font-size="9" fill="#333">d=6 expanded #182</text>
+<rect x="1193.6" y="607.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="622.0">CC  |B MMMC</text>
+<text x="1198.6" y="637.0" font-size="9" fill="#333">d=7 expanded #425</text>
+<rect x="1193.6" y="688.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="703.0">CCC B|  MMM</text>
+<text x="1198.6" y="718.0" font-size="9" fill="#333">d=8 expanded #969</text>
+<rect x="1193.6" y="769.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="784.0">C  |B MMMCC</text>
+<text x="1198.6" y="799.0" font-size="9" fill="#333">d=9 expanded #2254</text>
+<rect x="1193.6" y="850.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="865.0">MC B|  MMCC</text>
+<text x="1198.6" y="880.0" font-size="9" fill="#333">d=10 expanded #5123</text>
+<rect x="1193.6" y="931.0" width="114.4" height="35.0" rx="5" fill="#b7f0b1" stroke="#1a7f37" stroke-width="3"/>
+<text x="1198.6" y="946.0">-  |B MMMCCC</text>
+<text x="1198.6" y="961.0" font-size="9" fill="#333">d=11 goal</text>
+<rect x="998.0" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1003.0" y="298.0">MMMC  |B CC</text>
+<text x="1003.0" y="313.0" font-size="9" fill="#333">d=3 expanded #13</text>
+<rect x="1063.2" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1068.2" y="379.0">MMMCCC B|  -</text>
+<text x="1068.2" y="394.0" font-size="9" fill="#333">d=4 expanded #32</text>
+<rect x="932.8" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="937.8" y="379.0">MMMCC B|  C</text>
+<text x="937.8" y="394.0" font-size="9" fill="#333">d=4 expanded #31</text>
+<rect x="737.2" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="742.2" y="298.0">MMCC  |B MC</text>
+<text x="742.2" y="313.0" font-size="9" fill="#333">d=3 expanded #12</text>
+<rect x="802.4" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="807.4" y="379.0">MMMCCC B|  -</text>
+<text x="807.4" y="394.0" font-size="9" fill="#333">d=4 expanded #30</text>
+<rect x="672.0" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="677.0" y="379.0">MMMCC B|  C</text>
+<text x="677.0" y="394.0" font-size="9" fill="#333">d=4 expanded #29</text>
+<rect x="248.2" y="121.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="253.2" y="136.0">MMMCC  |B C</text>
+<text x="253.2" y="151.0" font-size="9" fill="#333">d=1 expanded #1</text>
+<rect x="248.2" y="202.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="253.2" y="217.0">MMMCCC B|  -</text>
+<text x="253.2" y="232.0" font-size="9" fill="#333">d=2 expanded #4</text>
+<rect x="476.4" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="481.4" y="298.0">MMMC  |B CC</text>
+<text x="481.4" y="313.0" font-size="9" fill="#333">d=3 expanded #11</text>
+<rect x="541.6" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="546.6" y="379.0">MMMCCC B|  -</text>
+<text x="546.6" y="394.0" font-size="9" fill="#333">d=4 expanded #28</text>
+<rect x="411.2" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="416.2" y="379.0">MMMCC B|  C</text>
+<text x="416.2" y="394.0" font-size="9" fill="#333">d=4 expanded #27</text>
+<rect x="215.6" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="220.6" y="298.0">MMCC  |B MC</text>
+<text x="220.6" y="313.0" font-size="9" fill="#333">d=3 expanded #10</text>
+<rect x="280.8" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="285.8" y="379.0">MMMCCC B|  -</text>
+<text x="285.8" y="394.0" font-size="9" fill="#333">d=4 expanded #26</text>
+<rect x="150.4" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="155.4" y="379.0">MMMCC B|  C</text>
+<text x="155.4" y="394.0" font-size="9" fill="#333">d=4 expanded #25</text>
+<rect x="20.0" y="283.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="25.0" y="298.0">MMMCC  |B C</text>
+<text x="25.0" y="313.0" font-size="9" fill="#333">d=3 expanded #9</text>
+<rect x="20.0" y="364.0" width="114.4" height="35.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="25.0" y="379.0">MMMCCC B|  -</text>
+<text x="25.0" y="394.0" font-size="9" fill="#333">d=4 expanded #24</text>
+</svg>

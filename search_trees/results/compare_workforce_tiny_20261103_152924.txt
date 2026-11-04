@@ -1,0 +1,12 @@
+workforce    tiny       bfs   graph    FOUND               7       2,060        773        1,290    0.095
+workforce    tiny       dfs   graph    FOUND               7          26         12           14    0.002
+workforce    tiny       iddfs path     FOUND               7       3,267      1,194           16    0.118
+workforce    tiny       ucs   graph    FOUND               7       2,944      2,059        1,290    0.326
+workforce    small      bfs   graph    FOUND               7      11,271      3,931        7,368    0.639
+workforce    small      dfs   graph    FOUND               7          75         46           37    0.011
+workforce    small      iddfs path     FOUND               7      17,302      6,004           37    1.013
+workforce    small      ucs   graph    FOUND               7      13,457     11,269        7,368    2.634
+workforce    impossible bfs   graph    NO_SOLUTION         -          73         73           42    0.005
+workforce    impossible dfs   graph    NO_SOLUTION         -          73         73           12    0.005
+workforce    impossible iddfs path     NO_SOLUTION         -         185        112           12    0.008
+workforce    impossible ucs   graph    NO_SOLUTION         -          73         73           42    0.003

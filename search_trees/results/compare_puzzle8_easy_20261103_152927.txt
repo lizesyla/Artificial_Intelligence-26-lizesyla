@@ -1,0 +1,10 @@
+puzzle8      easy       bfs   graph    FOUND               2           9          3            3    0.000
+puzzle8      easy       ucs   graph    FOUND               2          19          6            8    0.000
+puzzle8      easy       dfs   graph    FOUND           64328     230,822     84,896       42,198    1.104
+puzzle8      easy       iddfs path     FOUND               2          13          4            3    0.000
+puzzle8      easy       bfs   none     FOUND               2           9          3            5    0.000
+puzzle8      medium     bfs   graph    FOUND               8         383        136          102    0.002
+puzzle8      medium     ucs   graph    FOUND               8         633        237          139    0.003
+puzzle8      medium     dfs   graph    FOUND           28840     417,150    157,433       42,826    1.895
+puzzle8      medium     iddfs path     FOUND               8         898        320            8    0.004
+puzzle8      medium     bfs   none     FOUND               8       3,751      1,299        2,451    0.014

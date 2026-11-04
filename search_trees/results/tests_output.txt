@@ -1,0 +1,21 @@
+test_bfs_and_ucs_are_optimal (__main__.TestEightPuzzle) ... ok
+test_iddfs_optimal_small (__main__.TestEightPuzzle) ... ok
+test_instances_have_declared_depth (__main__.TestEightPuzzle) ... ok
+test_solution_path_is_legal (__main__.TestEightPuzzle) ... ok
+test_state_space_size (__main__.TestEightPuzzle) ... ok
+test_unsolvable (__main__.TestEightPuzzle) ... ok
+test_classic_11_crossings (__main__.TestMissionaries) ... ok
+test_every_state_on_path_is_safe (__main__.TestMissionaries) ... ok
+test_impossible (__main__.TestMissionaries) ... ok
+test_tree_search_needs_limit (__main__.TestMissionaries) ... ok
+test_bad_config (__main__.TestTreeOutput) ... ok
+test_outputs (__main__.TestTreeOutput) ... ok
+test_bfs_same_answer_set (__main__.TestWorkforce) ... ok
+test_instances (__main__.TestWorkforce) ... ok
+test_runs (__main__.TestWorkforce) ... ok
+test_violations_detects_errors (__main__.TestWorkforce) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 10.212s
+
+OK

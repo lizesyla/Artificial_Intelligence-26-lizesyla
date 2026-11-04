@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2608" height="1308" font-family="Courier New, monospace" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="18" font-family="Helvetica" font-size="14">8-puzzle easy - DFS, graph search (first 30 nodes; the path found has 64,328 moves)</text>
+<line x1="2069.0" y1="101.0" x2="1610.0" y2="147.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1842.5" y="124.0" font-size="10" fill="#555">U</text>
+<line x1="2069.0" y1="101.0" x2="2528.0" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="2301.5" y="124.0" font-size="10" fill="#555">R</text>
+<line x1="1610.0" y1="208.0" x2="828.0" y2="254.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1222.0" y="231.0" font-size="10" fill="#555">U</text>
+<line x1="1610.0" y1="208.0" x2="2256.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1936.0" y="231.0" font-size="10" fill="#555">D</text>
+<line x1="1610.0" y1="208.0" x2="2392.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2004.0" y="231.0" font-size="10" fill="#555">R</text>
+<line x1="828.0" y1="315.0" x2="80.0" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="457.0" y="338.0" font-size="10" fill="#555">D</text>
+<line x1="828.0" y1="315.0" x2="1576.0" y2="361.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1205.0" y="338.0" font-size="10" fill="#555">R</text>
+<line x1="1576.0" y1="422.0" x2="1032.0" y2="468.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1307.0" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="1576.0" y1="422.0" x2="1984.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1783.0" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="1576.0" y1="422.0" x2="2120.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1851.0" y="445.0" font-size="10" fill="#555">R</text>
+<line x1="1032.0" y1="529.0" x2="216.0" y2="575.0" stroke="#888" stroke-width="1"/>
+<text x="627.0" y="552.0" font-size="10" fill="#555">U</text>
+<line x1="1032.0" y1="529.0" x2="964.0" y2="575.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1001.0" y="552.0" font-size="10" fill="#555">D</text>
+<line x1="1032.0" y1="529.0" x2="1712.0" y2="575.0" stroke="#888" stroke-width="1"/>
+<text x="1375.0" y="552.0" font-size="10" fill="#555">L</text>
+<line x1="1032.0" y1="529.0" x2="1848.0" y2="575.0" stroke="#888" stroke-width="1"/>
+<text x="1443.0" y="552.0" font-size="10" fill="#555">R</text>
+<line x1="964.0" y1="636.0" x2="352.0" y2="682.0" stroke="#888" stroke-width="1"/>
+<text x="661.0" y="659.0" font-size="10" fill="#555">U</text>
+<line x1="964.0" y1="636.0" x2="1214.8" y2="682.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1092.4" y="659.0" font-size="10" fill="#555">L</text>
+<line x1="964.0" y1="636.0" x2="1576.0" y2="682.0" stroke="#888" stroke-width="1"/>
+<text x="1273.0" y="659.0" font-size="10" fill="#555">R</text>
+<line x1="1214.8" y1="743.0" x2="989.5" y2="789.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1105.1" y="766.0" font-size="10" fill="#555">U</text>
+<line x1="1214.8" y1="743.0" x2="1440.0" y2="789.0" stroke="#888" stroke-width="1"/>
+<text x="1330.4" y="766.0" font-size="10" fill="#555">R</text>
+<line x1="989.5" y1="850.0" x2="675.0" y2="896.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="835.2" y="873.0" font-size="10" fill="#555">U</text>
+<line x1="989.5" y1="850.0" x2="1168.0" y2="896.0" stroke="#888" stroke-width="1"/>
+<text x="1081.8" y="873.0" font-size="10" fill="#555">D</text>
+<line x1="989.5" y1="850.0" x2="1304.0" y2="896.0" stroke="#888" stroke-width="1"/>
+<text x="1149.8" y="873.0" font-size="10" fill="#555">R</text>
+<line x1="675.0" y1="957.0" x2="488.0" y2="1003.0" stroke="#888" stroke-width="1"/>
+<text x="584.5" y="980.0" font-size="10" fill="#555">D</text>
+<line x1="675.0" y1="957.0" x2="862.0" y2="1003.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="771.5" y="980.0" font-size="10" fill="#555">R</text>
+<line x1="862.0" y1="1064.0" x2="692.0" y2="1110.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="780.0" y="1087.0" font-size="10" fill="#555">D</text>
+<line x1="862.0" y1="1064.0" x2="896.0" y2="1110.0" stroke="#888" stroke-width="1"/>
+<text x="882.0" y="1087.0" font-size="10" fill="#555">L</text>
+<line x1="862.0" y1="1064.0" x2="1032.0" y2="1110.0" stroke="#888" stroke-width="1"/>
+<text x="950.0" y="1087.0" font-size="10" fill="#555">R</text>
+<line x1="692.0" y1="1171.0" x2="624.0" y2="1217.0" stroke="#888" stroke-width="1"/>
+<text x="661.0" y="1194.0" font-size="10" fill="#555">U</text>
+<line x1="692.0" y1="1171.0" x2="760.0" y2="1217.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="729.0" y="1194.0" font-size="10" fill="#555">D</text>
+<rect x="2009.0" y="40.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="2014.0" y="55.0">1 2 3</text>
+<text x="2014.0" y="68.0">4 5 6</text>
+<text x="2014.0" y="81.0">_ 7 8</text>
+<text x="2014.0" y="96.0" font-size="9" fill="#333">d=0 expanded #0</text>
+<rect x="2468.0" y="147.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="2473.0" y="162.0">1 2 3</text>
+<text x="2473.0" y="175.0">4 5 6</text>
+<text x="2473.0" y="188.0">7 _ 8</text>
+<text x="2473.0" y="203.0" font-size="9" fill="#333">d=1 frontier</text>
+<rect x="1550.0" y="147.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1555.0" y="162.0">1 2 3</text>
+<text x="1555.0" y="175.0">_ 5 6</text>
+<text x="1555.0" y="188.0">4 7 8</text>
+<text x="1555.0" y="203.0" font-size="9" fill="#333">d=1 expanded #1</text>
+<rect x="2332.0" y="254.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="2337.0" y="269.0">1 2 3</text>
+<text x="2337.0" y="282.0">5 _ 6</text>
+<text x="2337.0" y="295.0">4 7 8</text>
+<text x="2337.0" y="310.0" font-size="9" fill="#333">d=2 frontier</text>
+<rect x="2196.0" y="254.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="2201.0" y="269.0">1 2 3</text>
+<text x="2201.0" y="282.0">4 5 6</text>
+<text x="2201.0" y="295.0">_ 7 8</text>
+<text x="2201.0" y="310.0" font-size="9" fill="#333">d=2 duplicate</text>
+<rect x="768.0" y="254.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="773.0" y="269.0">_ 2 3</text>
+<text x="773.0" y="282.0">1 5 6</text>
+<text x="773.0" y="295.0">4 7 8</text>
+<text x="773.0" y="310.0" font-size="9" fill="#333">d=2 expanded #2</text>
+<rect x="1516.0" y="361.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1521.0" y="376.0">2 _ 3</text>
+<text x="1521.0" y="389.0">1 5 6</text>
+<text x="1521.0" y="402.0">4 7 8</text>
+<text x="1521.0" y="417.0" font-size="9" fill="#333">d=3 expanded #3</text>
+<rect x="2060.0" y="468.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="2065.0" y="483.0">2 3 _</text>
+<text x="2065.0" y="496.0">1 5 6</text>
+<text x="2065.0" y="509.0">4 7 8</text>
+<text x="2065.0" y="524.0" font-size="9" fill="#333">d=4 frontier</text>
+<rect x="1924.0" y="468.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1929.0" y="483.0">_ 2 3</text>
+<text x="1929.0" y="496.0">1 5 6</text>
+<text x="1929.0" y="509.0">4 7 8</text>
+<text x="1929.0" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="972.0" y="468.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="977.0" y="483.0">2 5 3</text>
+<text x="977.0" y="496.0">1 _ 6</text>
+<text x="977.0" y="509.0">4 7 8</text>
+<text x="977.0" y="524.0" font-size="9" fill="#333">d=4 expanded #4</text>
+<rect x="1788.0" y="575.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="1793.0" y="590.0">2 5 3</text>
+<text x="1793.0" y="603.0">1 6 _</text>
+<text x="1793.0" y="616.0">4 7 8</text>
+<text x="1793.0" y="631.0" font-size="9" fill="#333">d=5 frontier</text>
+<rect x="1652.0" y="575.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="1657.0" y="590.0">2 5 3</text>
+<text x="1657.0" y="603.0">_ 1 6</text>
+<text x="1657.0" y="616.0">4 7 8</text>
+<text x="1657.0" y="631.0" font-size="9" fill="#333">d=5 frontier</text>
+<rect x="904.0" y="575.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="909.0" y="590.0">2 5 3</text>
+<text x="909.0" y="603.0">1 7 6</text>
+<text x="909.0" y="616.0">4 _ 8</text>
+<text x="909.0" y="631.0" font-size="9" fill="#333">d=5 expanded #5</text>
+<rect x="1516.0" y="682.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="1521.0" y="697.0">2 5 3</text>
+<text x="1521.0" y="710.0">1 7 6</text>
+<text x="1521.0" y="723.0">4 8 _</text>
+<text x="1521.0" y="738.0" font-size="9" fill="#333">d=6 frontier</text>
+<rect x="1154.8" y="682.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1159.8" y="697.0">2 5 3</text>
+<text x="1159.8" y="710.0">1 7 6</text>
+<text x="1159.8" y="723.0">_ 4 8</text>
+<text x="1159.8" y="738.0" font-size="9" fill="#333">d=6 expanded #6</text>
+<rect x="1380.0" y="789.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1385.0" y="804.0">2 5 3</text>
+<text x="1385.0" y="817.0">1 7 6</text>
+<text x="1385.0" y="830.0">4 _ 8</text>
+<text x="1385.0" y="845.0" font-size="9" fill="#333">d=7 duplicate</text>
+<rect x="929.5" y="789.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="934.5" y="804.0">2 5 3</text>
+<text x="934.5" y="817.0">_ 7 6</text>
+<text x="934.5" y="830.0">1 4 8</text>
+<text x="934.5" y="845.0" font-size="9" fill="#333">d=7 expanded #7</text>
+<rect x="1244.0" y="896.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="1249.0" y="911.0">2 5 3</text>
+<text x="1249.0" y="924.0">7 _ 6</text>
+<text x="1249.0" y="937.0">1 4 8</text>
+<text x="1249.0" y="952.0" font-size="9" fill="#333">d=8 frontier</text>
+<rect x="1108.0" y="896.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1113.0" y="911.0">2 5 3</text>
+<text x="1113.0" y="924.0">1 7 6</text>
+<text x="1113.0" y="937.0">_ 4 8</text>
+<text x="1113.0" y="952.0" font-size="9" fill="#333">d=8 duplicate</text>
+<rect x="615.0" y="896.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="620.0" y="911.0">_ 5 3</text>
+<text x="620.0" y="924.0">2 7 6</text>
+<text x="620.0" y="937.0">1 4 8</text>
+<text x="620.0" y="952.0" font-size="9" fill="#333">d=8 expanded #8</text>
+<rect x="802.0" y="1003.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="807.0" y="1018.0">5 _ 3</text>
+<text x="807.0" y="1031.0">2 7 6</text>
+<text x="807.0" y="1044.0">1 4 8</text>
+<text x="807.0" y="1059.0" font-size="9" fill="#333">d=9 expanded #9</text>
+<rect x="972.0" y="1110.0" width="120.0" height="61.0" rx="5" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<text x="977.0" y="1125.0">5 3 _</text>
+<text x="977.0" y="1138.0">2 7 6</text>
+<text x="977.0" y="1151.0">1 4 8</text>
+<text x="977.0" y="1166.0" font-size="9" fill="#333">d=10 frontier</text>
+<rect x="836.0" y="1110.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="841.0" y="1125.0">_ 5 3</text>
+<text x="841.0" y="1138.0">2 7 6</text>
+<text x="841.0" y="1151.0">1 4 8</text>
+<text x="841.0" y="1166.0" font-size="9" fill="#333">d=10 duplicate</text>
+<rect x="632.0" y="1110.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="637.0" y="1125.0">5 7 3</text>
+<text x="637.0" y="1138.0">2 _ 6</text>
+<text x="637.0" y="1151.0">1 4 8</text>
+<text x="637.0" y="1166.0" font-size="9" fill="#333">d=10 expanded #10</text>
+<rect x="700.0" y="1217.0" width="120.0" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="705.0" y="1232.0">5 7 3</text>
+<text x="705.0" y="1245.0">2 4 6</text>
+<text x="705.0" y="1258.0">1 _ 8</text>
+<text x="705.0" y="1273.0" font-size="9" fill="#333">d=11 expanded #11</text>
+<rect x="564.0" y="1217.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="569.0" y="1232.0">5 _ 3</text>
+<text x="569.0" y="1245.0">2 7 6</text>
+<text x="569.0" y="1258.0">1 4 8</text>
+<text x="569.0" y="1273.0" font-size="9" fill="#333">d=11 duplicate</text>
+<rect x="428.0" y="1003.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="433.0" y="1018.0">2 5 3</text>
+<text x="433.0" y="1031.0">_ 7 6</text>
+<text x="433.0" y="1044.0">1 4 8</text>
+<text x="433.0" y="1059.0" font-size="9" fill="#333">d=9 duplicate</text>
+<rect x="292.0" y="682.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="297.0" y="697.0">2 5 3</text>
+<text x="297.0" y="710.0">1 _ 6</text>
+<text x="297.0" y="723.0">4 7 8</text>
+<text x="297.0" y="738.0" font-size="9" fill="#333">d=6 duplicate</text>
+<rect x="156.0" y="575.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="161.0" y="590.0">2 _ 3</text>
+<text x="161.0" y="603.0">1 5 6</text>
+<text x="161.0" y="616.0">4 7 8</text>
+<text x="161.0" y="631.0" font-size="9" fill="#333">d=5 duplicate</text>
+<rect x="20.0" y="361.0" width="120.0" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="25.0" y="376.0">1 2 3</text>
+<text x="25.0" y="389.0">_ 5 6</text>
+<text x="25.0" y="402.0">4 7 8</text>
+<text x="25.0" y="417.0" font-size="9" fill="#333">d=3 duplicate</text>
+</svg>

@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3935" height="987" font-family="Courier New, monospace" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="18" font-family="Helvetica" font-size="14">8-puzzle medium - BFS (first 45 nodes + solution path)</text>
+<line x1="1968.0" y1="101.0" x2="761.8" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="1367.9" y="124.0" font-size="10" fill="#555">U</text>
+<line x1="1968.0" y1="101.0" x2="3174.2" y2="147.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2574.1" y="124.0" font-size="10" fill="#555">R</text>
+<line x1="3174.2" y1="208.0" x2="2620.0" y2="254.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2900.1" y="231.0" font-size="10" fill="#555">U</text>
+<line x1="3174.2" y1="208.0" x2="3337.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="3258.7" y="231.0" font-size="10" fill="#555">L</text>
+<line x1="3174.2" y1="208.0" x2="3728.4" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="3454.3" y="231.0" font-size="10" fill="#555">R</text>
+<line x1="3728.4" y1="315.0" x2="3598.0" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="3666.2" y="338.0" font-size="10" fill="#555">U</text>
+<line x1="3728.4" y1="315.0" x2="3858.8" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="3796.6" y="338.0" font-size="10" fill="#555">L</text>
+<line x1="3598.0" y1="422.0" x2="3467.6" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="3535.8" y="445.0" font-size="10" fill="#555">U</text>
+<line x1="3598.0" y1="422.0" x2="3598.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="3601.0" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="3598.0" y1="422.0" x2="3728.4" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="3666.2" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="2620.0" y1="315.0" x2="2163.6" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="2394.8" y="338.0" font-size="10" fill="#555">U</text>
+<line x1="2620.0" y1="315.0" x2="2424.4" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="2525.2" y="338.0" font-size="10" fill="#555">D</text>
+<line x1="2620.0" y1="315.0" x2="2685.2" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="2655.6" y="338.0" font-size="10" fill="#555">L</text>
+<line x1="2620.0" y1="315.0" x2="3076.4" y2="361.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2851.2" y="338.0" font-size="10" fill="#555">R</text>
+<line x1="3076.4" y1="422.0" x2="2946.0" y2="468.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="3014.2" y="445.0" font-size="10" fill="#555">U</text>
+<line x1="3076.4" y1="422.0" x2="3076.4" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="3079.4" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="3076.4" y1="422.0" x2="3206.8" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="3144.6" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="2946.0" y1="529.0" x2="2946.0" y2="575.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2949.0" y="552.0" font-size="10" fill="#555">L</text>
+<line x1="2946.0" y1="636.0" x2="2946.0" y2="682.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2949.0" y="659.0" font-size="10" fill="#555">D</text>
+<line x1="2946.0" y1="743.0" x2="2946.0" y2="789.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2949.0" y="766.0" font-size="10" fill="#555">D</text>
+<line x1="2946.0" y1="850.0" x2="2946.0" y2="896.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="2949.0" y="873.0" font-size="10" fill="#555">R</text>
+<line x1="2685.2" y1="422.0" x2="2554.8" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="2623.0" y="445.0" font-size="10" fill="#555">U</text>
+<line x1="2685.2" y1="422.0" x2="2685.2" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="2688.2" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="2685.2" y1="422.0" x2="2815.6" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="2753.4" y="445.0" font-size="10" fill="#555">R</text>
+<line x1="2163.6" y1="422.0" x2="2033.2" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="2101.4" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="2163.6" y1="422.0" x2="2163.6" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="2166.6" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="2163.6" y1="422.0" x2="2294.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="2231.8" y="445.0" font-size="10" fill="#555">R</text>
+<line x1="761.8" y1="208.0" x2="207.6" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="487.7" y="231.0" font-size="10" fill="#555">U</text>
+<line x1="761.8" y1="208.0" x2="598.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="683.3" y="231.0" font-size="10" fill="#555">D</text>
+<line x1="761.8" y1="208.0" x2="1316.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1041.9" y="231.0" font-size="10" fill="#555">R</text>
+<line x1="1316.0" y1="315.0" x2="859.6" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="1090.8" y="338.0" font-size="10" fill="#555">U</text>
+<line x1="1316.0" y1="315.0" x2="1250.8" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="1286.4" y="338.0" font-size="10" fill="#555">D</text>
+<line x1="1316.0" y1="315.0" x2="1511.6" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="1416.8" y="338.0" font-size="10" fill="#555">L</text>
+<line x1="1316.0" y1="315.0" x2="1772.4" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="1547.2" y="338.0" font-size="10" fill="#555">R</text>
+<line x1="1772.4" y1="422.0" x2="1642.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1710.2" y="445.0" font-size="10" fill="#555">U</text>
+<line x1="1772.4" y1="422.0" x2="1772.4" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1775.4" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="1772.4" y1="422.0" x2="1902.8" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1840.6" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="1250.8" y1="422.0" x2="1120.4" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1188.6" y="445.0" font-size="10" fill="#555">U</text>
+<line x1="1250.8" y1="422.0" x2="1250.8" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1253.8" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="1250.8" y1="422.0" x2="1381.2" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="1319.0" y="445.0" font-size="10" fill="#555">R</text>
+<line x1="859.6" y1="422.0" x2="729.2" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="797.4" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="859.6" y1="422.0" x2="859.6" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="862.6" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="859.6" y1="422.0" x2="990.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="927.8" y="445.0" font-size="10" fill="#555">R</text>
+<line x1="207.6" y1="315.0" x2="77.2" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="145.4" y="338.0" font-size="10" fill="#555">D</text>
+<line x1="207.6" y1="315.0" x2="338.0" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="275.8" y="338.0" font-size="10" fill="#555">R</text>
+<line x1="338.0" y1="422.0" x2="207.6" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="275.8" y="445.0" font-size="10" fill="#555">D</text>
+<line x1="338.0" y1="422.0" x2="338.0" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="341.0" y="445.0" font-size="10" fill="#555">L</text>
+<line x1="338.0" y1="422.0" x2="468.4" y2="468.0" stroke="#888" stroke-width="1"/>
+<text x="406.2" y="445.0" font-size="10" fill="#555">R</text>
+<rect x="1910.8" y="40.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1915.8" y="55.0">1 3 6</text>
+<text x="1915.8" y="68.0">4 5 2</text>
+<text x="1915.8" y="81.0">_ 7 8</text>
+<text x="1915.8" y="96.0" font-size="9" fill="#333">d=0 expanded #0</text>
+<rect x="3117.0" y="147.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="3122.0" y="162.0">1 3 6</text>
+<text x="3122.0" y="175.0">4 5 2</text>
+<text x="3122.0" y="188.0">7 _ 8</text>
+<text x="3122.0" y="203.0" font-size="9" fill="#333">d=1 expanded #2</text>
+<rect x="3671.2" y="254.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3676.2" y="269.0">1 3 6</text>
+<text x="3676.2" y="282.0">4 5 2</text>
+<text x="3676.2" y="295.0">7 8 _</text>
+<text x="3676.2" y="310.0" font-size="9" fill="#333">d=2 expanded #6</text>
+<rect x="3801.6" y="361.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="3806.6" y="376.0">1 3 6</text>
+<text x="3806.6" y="389.0">4 5 2</text>
+<text x="3806.6" y="402.0">7 _ 8</text>
+<text x="3806.6" y="417.0" font-size="9" fill="#333">d=3 duplicate</text>
+<rect x="3540.8" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3545.8" y="376.0">1 3 6</text>
+<text x="3545.8" y="389.0">4 5 _</text>
+<text x="3545.8" y="402.0">7 8 2</text>
+<text x="3545.8" y="417.0" font-size="9" fill="#333">d=3 expanded #14</text>
+<rect x="3671.2" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3676.2" y="483.0">1 3 6</text>
+<text x="3676.2" y="496.0">4 _ 5</text>
+<text x="3676.2" y="509.0">7 8 2</text>
+<text x="3676.2" y="524.0" font-size="9" fill="#333">d=4 expanded #30</text>
+<rect x="3540.8" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="3545.8" y="483.0">1 3 6</text>
+<text x="3545.8" y="496.0">4 5 2</text>
+<text x="3545.8" y="509.0">7 8 _</text>
+<text x="3545.8" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="3410.4" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3415.4" y="483.0">1 3 _</text>
+<text x="3415.4" y="496.0">4 5 6</text>
+<text x="3415.4" y="509.0">7 8 2</text>
+<text x="3415.4" y="524.0" font-size="9" fill="#333">d=4 expanded #29</text>
+<rect x="3280.0" y="254.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="3285.0" y="269.0">1 3 6</text>
+<text x="3285.0" y="282.0">4 5 2</text>
+<text x="3285.0" y="295.0">_ 7 8</text>
+<text x="3285.0" y="310.0" font-size="9" fill="#333">d=2 duplicate</text>
+<rect x="2562.8" y="254.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="2567.8" y="269.0">1 3 6</text>
+<text x="2567.8" y="282.0">4 _ 2</text>
+<text x="2567.8" y="295.0">7 5 8</text>
+<text x="2567.8" y="310.0" font-size="9" fill="#333">d=2 expanded #5</text>
+<rect x="3019.2" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="3024.2" y="376.0">1 3 6</text>
+<text x="3024.2" y="389.0">4 2 _</text>
+<text x="3024.2" y="402.0">7 5 8</text>
+<text x="3024.2" y="417.0" font-size="9" fill="#333">d=3 expanded #13</text>
+<rect x="3149.6" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="3154.6" y="483.0">1 3 6</text>
+<text x="3154.6" y="496.0">4 _ 2</text>
+<text x="3154.6" y="509.0">7 5 8</text>
+<text x="3154.6" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="3019.2" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3024.2" y="483.0">1 3 6</text>
+<text x="3024.2" y="496.0">4 2 8</text>
+<text x="3024.2" y="509.0">7 5 _</text>
+<text x="3024.2" y="524.0" font-size="9" fill="#333">d=4 expanded #28</text>
+<rect x="2888.8" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="2893.8" y="483.0">1 3 _</text>
+<text x="2893.8" y="496.0">4 2 6</text>
+<text x="2893.8" y="509.0">7 5 8</text>
+<text x="2893.8" y="524.0" font-size="9" fill="#333">d=4 expanded #27</text>
+<rect x="2888.8" y="575.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="2893.8" y="590.0">1 _ 3</text>
+<text x="2893.8" y="603.0">4 2 6</text>
+<text x="2893.8" y="616.0">7 5 8</text>
+<text x="2893.8" y="631.0" font-size="9" fill="#333">d=5 expanded #45</text>
+<rect x="2888.8" y="682.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="2893.8" y="697.0">1 2 3</text>
+<text x="2893.8" y="710.0">4 _ 6</text>
+<text x="2893.8" y="723.0">7 5 8</text>
+<text x="2893.8" y="738.0" font-size="9" fill="#333">d=6 expanded #78</text>
+<rect x="2888.8" y="789.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="2893.8" y="804.0">1 2 3</text>
+<text x="2893.8" y="817.0">4 5 6</text>
+<text x="2893.8" y="830.0">7 _ 8</text>
+<text x="2893.8" y="845.0" font-size="9" fill="#333">d=7 expanded #135</text>
+<rect x="2888.8" y="896.0" width="114.4" height="61.0" rx="5" fill="#b7f0b1" stroke="#1a7f37" stroke-width="3"/>
+<text x="2893.8" y="911.0">1 2 3</text>
+<text x="2893.8" y="924.0">4 5 6</text>
+<text x="2893.8" y="937.0">7 8 _</text>
+<text x="2893.8" y="952.0" font-size="9" fill="#333">d=8 goal</text>
+<rect x="2628.0" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2633.0" y="376.0">1 3 6</text>
+<text x="2633.0" y="389.0">_ 4 2</text>
+<text x="2633.0" y="402.0">7 5 8</text>
+<text x="2633.0" y="417.0" font-size="9" fill="#333">d=3 expanded #12</text>
+<rect x="2758.4" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="2763.4" y="483.0">1 3 6</text>
+<text x="2763.4" y="496.0">4 _ 2</text>
+<text x="2763.4" y="509.0">7 5 8</text>
+<text x="2763.4" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="2628.0" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2633.0" y="483.0">1 3 6</text>
+<text x="2633.0" y="496.0">7 4 2</text>
+<text x="2633.0" y="509.0">_ 5 8</text>
+<text x="2633.0" y="524.0" font-size="9" fill="#333">d=4 expanded #26</text>
+<rect x="2497.6" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2502.6" y="483.0">_ 3 6</text>
+<text x="2502.6" y="496.0">1 4 2</text>
+<text x="2502.6" y="509.0">7 5 8</text>
+<text x="2502.6" y="524.0" font-size="9" fill="#333">d=4 expanded #25</text>
+<rect x="2367.2" y="361.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="2372.2" y="376.0">1 3 6</text>
+<text x="2372.2" y="389.0">4 5 2</text>
+<text x="2372.2" y="402.0">7 _ 8</text>
+<text x="2372.2" y="417.0" font-size="9" fill="#333">d=3 duplicate</text>
+<rect x="2106.4" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2111.4" y="376.0">1 _ 6</text>
+<text x="2111.4" y="389.0">4 3 2</text>
+<text x="2111.4" y="402.0">7 5 8</text>
+<text x="2111.4" y="417.0" font-size="9" fill="#333">d=3 expanded #11</text>
+<rect x="2236.8" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2241.8" y="483.0">1 6 _</text>
+<text x="2241.8" y="496.0">4 3 2</text>
+<text x="2241.8" y="509.0">7 5 8</text>
+<text x="2241.8" y="524.0" font-size="9" fill="#333">d=4 expanded #24</text>
+<rect x="2106.4" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2111.4" y="483.0">_ 1 6</text>
+<text x="2111.4" y="496.0">4 3 2</text>
+<text x="2111.4" y="509.0">7 5 8</text>
+<text x="2111.4" y="524.0" font-size="9" fill="#333">d=4 expanded #23</text>
+<rect x="1976.0" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1981.0" y="483.0">1 3 6</text>
+<text x="1981.0" y="496.0">4 _ 2</text>
+<text x="1981.0" y="509.0">7 5 8</text>
+<text x="1981.0" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="704.6" y="147.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="709.6" y="162.0">1 3 6</text>
+<text x="709.6" y="175.0">_ 5 2</text>
+<text x="709.6" y="188.0">4 7 8</text>
+<text x="709.6" y="203.0" font-size="9" fill="#333">d=1 expanded #1</text>
+<rect x="1258.8" y="254.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1263.8" y="269.0">1 3 6</text>
+<text x="1263.8" y="282.0">5 _ 2</text>
+<text x="1263.8" y="295.0">4 7 8</text>
+<text x="1263.8" y="310.0" font-size="9" fill="#333">d=2 expanded #4</text>
+<rect x="1715.2" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1720.2" y="376.0">1 3 6</text>
+<text x="1720.2" y="389.0">5 2 _</text>
+<text x="1720.2" y="402.0">4 7 8</text>
+<text x="1720.2" y="417.0" font-size="9" fill="#333">d=3 expanded #10</text>
+<rect x="1845.6" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1850.6" y="483.0">1 3 6</text>
+<text x="1850.6" y="496.0">5 _ 2</text>
+<text x="1850.6" y="509.0">4 7 8</text>
+<text x="1850.6" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="1715.2" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1720.2" y="483.0">1 3 6</text>
+<text x="1720.2" y="496.0">5 2 8</text>
+<text x="1720.2" y="509.0">4 7 _</text>
+<text x="1720.2" y="524.0" font-size="9" fill="#333">d=4 expanded #22</text>
+<rect x="1584.8" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1589.8" y="483.0">1 3 _</text>
+<text x="1589.8" y="496.0">5 2 6</text>
+<text x="1589.8" y="509.0">4 7 8</text>
+<text x="1589.8" y="524.0" font-size="9" fill="#333">d=4 expanded #21</text>
+<rect x="1454.4" y="361.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1459.4" y="376.0">1 3 6</text>
+<text x="1459.4" y="389.0">_ 5 2</text>
+<text x="1459.4" y="402.0">4 7 8</text>
+<text x="1459.4" y="417.0" font-size="9" fill="#333">d=3 duplicate</text>
+<rect x="1193.6" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1198.6" y="376.0">1 3 6</text>
+<text x="1198.6" y="389.0">5 7 2</text>
+<text x="1198.6" y="402.0">4 _ 8</text>
+<text x="1198.6" y="417.0" font-size="9" fill="#333">d=3 expanded #9</text>
+<rect x="1324.0" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1329.0" y="483.0">1 3 6</text>
+<text x="1329.0" y="496.0">5 7 2</text>
+<text x="1329.0" y="509.0">4 8 _</text>
+<text x="1329.0" y="524.0" font-size="9" fill="#333">d=4 expanded #20</text>
+<rect x="1193.6" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1198.6" y="483.0">1 3 6</text>
+<text x="1198.6" y="496.0">5 7 2</text>
+<text x="1198.6" y="509.0">_ 4 8</text>
+<text x="1198.6" y="524.0" font-size="9" fill="#333">d=4 expanded #19</text>
+<rect x="1063.2" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1068.2" y="483.0">1 3 6</text>
+<text x="1068.2" y="496.0">5 _ 2</text>
+<text x="1068.2" y="509.0">4 7 8</text>
+<text x="1068.2" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="802.4" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="807.4" y="376.0">1 _ 6</text>
+<text x="807.4" y="389.0">5 3 2</text>
+<text x="807.4" y="402.0">4 7 8</text>
+<text x="807.4" y="417.0" font-size="9" fill="#333">d=3 expanded #8</text>
+<rect x="932.8" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="937.8" y="483.0">1 6 _</text>
+<text x="937.8" y="496.0">5 3 2</text>
+<text x="937.8" y="509.0">4 7 8</text>
+<text x="937.8" y="524.0" font-size="9" fill="#333">d=4 expanded #18</text>
+<rect x="802.4" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="807.4" y="483.0">_ 1 6</text>
+<text x="807.4" y="496.0">5 3 2</text>
+<text x="807.4" y="509.0">4 7 8</text>
+<text x="807.4" y="524.0" font-size="9" fill="#333">d=4 expanded #17</text>
+<rect x="672.0" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="677.0" y="483.0">1 3 6</text>
+<text x="677.0" y="496.0">5 _ 2</text>
+<text x="677.0" y="509.0">4 7 8</text>
+<text x="677.0" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="541.6" y="254.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="546.6" y="269.0">1 3 6</text>
+<text x="546.6" y="282.0">4 5 2</text>
+<text x="546.6" y="295.0">_ 7 8</text>
+<text x="546.6" y="310.0" font-size="9" fill="#333">d=2 duplicate</text>
+<rect x="150.4" y="254.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="155.4" y="269.0">_ 3 6</text>
+<text x="155.4" y="282.0">1 5 2</text>
+<text x="155.4" y="295.0">4 7 8</text>
+<text x="155.4" y="310.0" font-size="9" fill="#333">d=2 expanded #3</text>
+<rect x="280.8" y="361.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="285.8" y="376.0">3 _ 6</text>
+<text x="285.8" y="389.0">1 5 2</text>
+<text x="285.8" y="402.0">4 7 8</text>
+<text x="285.8" y="417.0" font-size="9" fill="#333">d=3 expanded #7</text>
+<rect x="411.2" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="416.2" y="483.0">3 6 _</text>
+<text x="416.2" y="496.0">1 5 2</text>
+<text x="416.2" y="509.0">4 7 8</text>
+<text x="416.2" y="524.0" font-size="9" fill="#333">d=4 expanded #16</text>
+<rect x="280.8" y="468.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="285.8" y="483.0">_ 3 6</text>
+<text x="285.8" y="496.0">1 5 2</text>
+<text x="285.8" y="509.0">4 7 8</text>
+<text x="285.8" y="524.0" font-size="9" fill="#333">d=4 duplicate</text>
+<rect x="150.4" y="468.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="155.4" y="483.0">3 5 6</text>
+<text x="155.4" y="496.0">1 _ 2</text>
+<text x="155.4" y="509.0">4 7 8</text>
+<text x="155.4" y="524.0" font-size="9" fill="#333">d=4 expanded #15</text>
+<rect x="20.0" y="361.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="25.0" y="376.0">1 3 6</text>
+<text x="25.0" y="389.0">_ 5 2</text>
+<text x="25.0" y="402.0">4 7 8</text>
+<text x="25.0" y="417.0" font-size="9" fill="#333">d=3 duplicate</text>
+</svg>

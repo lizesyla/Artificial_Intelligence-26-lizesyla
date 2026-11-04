@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3480" height="880" font-family="Courier New, monospace" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="18" font-family="Helvetica" font-size="14">Rotating Workforce (tiny) - BFS (first 40 nodes + solution path)</text>
+<line x1="1919.2" y1="101.0" x2="608.0" y2="147.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="1266.6" y="124.0" font-size="10" fill="#555">D1 N2</text>
+<line x1="1919.2" y1="101.0" x2="1323.2" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="1624.2" y="124.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="1919.2" y1="101.0" x2="1800.0" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="1862.6" y="124.0" font-size="10" fill="#555">D2 N1</text>
+<line x1="1919.2" y1="101.0" x2="2276.8" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="2101.0" y="124.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="1919.2" y1="101.0" x2="2753.6" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="2339.4" y="124.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="1919.2" y1="101.0" x2="3230.4" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="2577.8" y="124.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="3230.4" y1="208.0" x2="3051.6" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="3144.0" y="231.0" font-size="10" fill="#555">D1 N2</text>
+<line x1="3230.4" y1="208.0" x2="3170.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="3203.6" y="231.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="3230.4" y1="208.0" x2="3290.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="3263.2" y="231.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="3230.4" y1="208.0" x2="3409.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="3322.8" y="231.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="2753.6" y1="208.0" x2="2574.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2667.2" y="231.0" font-size="10" fill="#555">D2 N1</text>
+<line x1="2753.6" y1="208.0" x2="2694.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2726.8" y="231.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="2753.6" y1="208.0" x2="2813.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2786.4" y="231.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="2753.6" y1="208.0" x2="2932.4" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2846.0" y="231.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="2276.8" y1="208.0" x2="2098.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2190.4" y="231.0" font-size="10" fill="#555">D1 N2</text>
+<line x1="2276.8" y1="208.0" x2="2217.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2250.0" y="231.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="2276.8" y1="208.0" x2="2336.4" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2309.6" y="231.0" font-size="10" fill="#555">D2 N1</text>
+<line x1="2276.8" y1="208.0" x2="2455.6" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="2369.2" y="231.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="1800.0" y1="208.0" x2="1621.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1713.6" y="231.0" font-size="10" fill="#555">D2 N1</text>
+<line x1="1800.0" y1="208.0" x2="1740.4" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1773.2" y="231.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="1800.0" y1="208.0" x2="1859.6" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1832.8" y="231.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="1800.0" y1="208.0" x2="1978.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1892.4" y="231.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="1323.2" y1="208.0" x2="1144.4" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1236.8" y="231.0" font-size="10" fill="#555">D1 N2</text>
+<line x1="1323.2" y1="208.0" x2="1263.6" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1296.4" y="231.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="1323.2" y1="208.0" x2="1382.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1356.0" y="231.0" font-size="10" fill="#555">D2 N1</text>
+<line x1="1323.2" y1="208.0" x2="1502.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="1415.6" y="231.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="608.0" y1="208.0" x2="190.8" y2="254.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="402.4" y="231.0" font-size="10" fill="#555">D1 N2</text>
+<line x1="608.0" y1="208.0" x2="488.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="551.4" y="231.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="608.0" y1="208.0" x2="786.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="700.4" y="231.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="608.0" y1="208.0" x2="1025.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="819.6" y="231.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="1025.2" y1="315.0" x2="1025.2" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="1028.2" y="338.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="786.8" y1="315.0" x2="667.6" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="730.2" y="338.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="786.8" y1="315.0" x2="786.8" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="789.8" y="338.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="786.8" y1="315.0" x2="906.0" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="849.4" y="338.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="488.8" y1="315.0" x2="429.2" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="462.0" y="338.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="488.8" y1="315.0" x2="548.4" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="521.6" y="338.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="190.8" y1="315.0" x2="71.6" y2="361.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="134.2" y="338.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="190.8" y1="315.0" x2="190.8" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="193.8" y="338.0" font-size="10" fill="#555">D3 N1</text>
+<line x1="190.8" y1="315.0" x2="310.0" y2="361.0" stroke="#888" stroke-width="1"/>
+<text x="253.4" y="338.0" font-size="10" fill="#555">D3 N2</text>
+<line x1="71.6" y1="422.0" x2="71.6" y2="468.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="74.6" y="445.0" font-size="10" fill="#555">D1 N3</text>
+<line x1="71.6" y1="529.0" x2="71.6" y2="575.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="74.6" y="552.0" font-size="10" fill="#555">D2 N3</text>
+<line x1="71.6" y1="636.0" x2="71.6" y2="682.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="74.6" y="659.0" font-size="10" fill="#555">D1 N2</text>
+<line x1="71.6" y1="743.0" x2="71.6" y2="789.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="74.6" y="766.0" font-size="10" fill="#555">D1 N2</text>
+<rect x="1867.6" y="40.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="1872.6" y="55.0">.......</text>
+<text x="1872.6" y="68.0">.......</text>
+<text x="1872.6" y="81.0">.......</text>
+<text x="1872.6" y="96.0" font-size="9" fill="#333">d=0 expanded #0</text>
+<rect x="3178.8" y="147.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3183.8" y="162.0">-......</text>
+<text x="3183.8" y="175.0">N......</text>
+<text x="3183.8" y="188.0">D......</text>
+<text x="3183.8" y="203.0" font-size="9" fill="#333">d=1 expanded #6</text>
+<rect x="3357.6" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3362.6" y="269.0">--.....</text>
+<text x="3362.6" y="282.0">NN.....</text>
+<text x="3362.6" y="295.0">DD.....</text>
+<text x="3362.6" y="310.0" font-size="9" fill="#333">d=2 expanded #30</text>
+<rect x="3238.4" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3243.4" y="269.0">-N.....</text>
+<text x="3243.4" y="282.0">N-.....</text>
+<text x="3243.4" y="295.0">DD.....</text>
+<text x="3243.4" y="310.0" font-size="9" fill="#333">d=2 expanded #29</text>
+<rect x="3119.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3124.2" y="269.0">-D.....</text>
+<text x="3124.2" y="282.0">N-.....</text>
+<text x="3124.2" y="295.0">DN.....</text>
+<text x="3124.2" y="310.0" font-size="9" fill="#333">d=2 expanded #28</text>
+<rect x="3000.0" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="3005.0" y="269.0">-D.....</text>
+<text x="3005.0" y="282.0">NN.....</text>
+<text x="3005.0" y="295.0">D-.....</text>
+<text x="3005.0" y="310.0" font-size="9" fill="#333">d=2 expanded #27</text>
+<rect x="2702.0" y="147.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2707.0" y="162.0">N......</text>
+<text x="2707.0" y="175.0">-......</text>
+<text x="2707.0" y="188.0">D......</text>
+<text x="2707.0" y="203.0" font-size="9" fill="#333">d=1 expanded #5</text>
+<rect x="2880.8" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2885.8" y="269.0">N-.....</text>
+<text x="2885.8" y="282.0">-N.....</text>
+<text x="2885.8" y="295.0">DD.....</text>
+<text x="2885.8" y="310.0" font-size="9" fill="#333">d=2 expanded #26</text>
+<rect x="2761.6" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2766.6" y="269.0">NN.....</text>
+<text x="2766.6" y="282.0">--.....</text>
+<text x="2766.6" y="295.0">DD.....</text>
+<text x="2766.6" y="310.0" font-size="9" fill="#333">d=2 expanded #25</text>
+<rect x="2642.4" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2647.4" y="269.0">N-.....</text>
+<text x="2647.4" y="282.0">-D.....</text>
+<text x="2647.4" y="295.0">DN.....</text>
+<text x="2647.4" y="310.0" font-size="9" fill="#333">d=2 expanded #24</text>
+<rect x="2523.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2528.2" y="269.0">NN.....</text>
+<text x="2528.2" y="282.0">-D.....</text>
+<text x="2528.2" y="295.0">D-.....</text>
+<text x="2528.2" y="310.0" font-size="9" fill="#333">d=2 expanded #23</text>
+<rect x="2225.2" y="147.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2230.2" y="162.0">-......</text>
+<text x="2230.2" y="175.0">D......</text>
+<text x="2230.2" y="188.0">N......</text>
+<text x="2230.2" y="203.0" font-size="9" fill="#333">d=1 expanded #4</text>
+<rect x="2404.0" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2409.0" y="269.0">--.....</text>
+<text x="2409.0" y="282.0">DD.....</text>
+<text x="2409.0" y="295.0">NN.....</text>
+<text x="2409.0" y="310.0" font-size="9" fill="#333">d=2 expanded #22</text>
+<rect x="2284.8" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2289.8" y="269.0">-N.....</text>
+<text x="2289.8" y="282.0">DD.....</text>
+<text x="2289.8" y="295.0">N-.....</text>
+<text x="2289.8" y="310.0" font-size="9" fill="#333">d=2 expanded #21</text>
+<rect x="2165.6" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2170.6" y="269.0">-D.....</text>
+<text x="2170.6" y="282.0">D-.....</text>
+<text x="2170.6" y="295.0">NN.....</text>
+<text x="2170.6" y="310.0" font-size="9" fill="#333">d=2 expanded #20</text>
+<rect x="2046.4" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="2051.4" y="269.0">-D.....</text>
+<text x="2051.4" y="282.0">DN.....</text>
+<text x="2051.4" y="295.0">N-.....</text>
+<text x="2051.4" y="310.0" font-size="9" fill="#333">d=2 expanded #19</text>
+<rect x="1748.4" y="147.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1753.4" y="162.0">N......</text>
+<text x="1753.4" y="175.0">D......</text>
+<text x="1753.4" y="188.0">-......</text>
+<text x="1753.4" y="203.0" font-size="9" fill="#333">d=1 expanded #3</text>
+<rect x="1927.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1932.2" y="269.0">N-.....</text>
+<text x="1932.2" y="282.0">DN.....</text>
+<text x="1932.2" y="295.0">-D.....</text>
+<text x="1932.2" y="310.0" font-size="9" fill="#333">d=2 expanded #18</text>
+<rect x="1808.0" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1813.0" y="269.0">NN.....</text>
+<text x="1813.0" y="282.0">D-.....</text>
+<text x="1813.0" y="295.0">-D.....</text>
+<text x="1813.0" y="310.0" font-size="9" fill="#333">d=2 expanded #17</text>
+<rect x="1688.8" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1693.8" y="269.0">N-.....</text>
+<text x="1693.8" y="282.0">DD.....</text>
+<text x="1693.8" y="295.0">-N.....</text>
+<text x="1693.8" y="310.0" font-size="9" fill="#333">d=2 expanded #16</text>
+<rect x="1569.6" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1574.6" y="269.0">NN.....</text>
+<text x="1574.6" y="282.0">DD.....</text>
+<text x="1574.6" y="295.0">--.....</text>
+<text x="1574.6" y="310.0" font-size="9" fill="#333">d=2 expanded #15</text>
+<rect x="1271.6" y="147.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1276.6" y="162.0">D......</text>
+<text x="1276.6" y="175.0">-......</text>
+<text x="1276.6" y="188.0">N......</text>
+<text x="1276.6" y="203.0" font-size="9" fill="#333">d=1 expanded #2</text>
+<rect x="1450.4" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1455.4" y="269.0">D-.....</text>
+<text x="1455.4" y="282.0">-D.....</text>
+<text x="1455.4" y="295.0">NN.....</text>
+<text x="1455.4" y="310.0" font-size="9" fill="#333">d=2 expanded #14</text>
+<rect x="1331.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1336.2" y="269.0">DN.....</text>
+<text x="1336.2" y="282.0">-D.....</text>
+<text x="1336.2" y="295.0">N-.....</text>
+<text x="1336.2" y="310.0" font-size="9" fill="#333">d=2 expanded #13</text>
+<rect x="1212.0" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1217.0" y="269.0">DD.....</text>
+<text x="1217.0" y="282.0">--.....</text>
+<text x="1217.0" y="295.0">NN.....</text>
+<text x="1217.0" y="310.0" font-size="9" fill="#333">d=2 expanded #12</text>
+<rect x="1092.8" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="1097.8" y="269.0">DD.....</text>
+<text x="1097.8" y="282.0">-N.....</text>
+<text x="1097.8" y="295.0">N-.....</text>
+<text x="1097.8" y="310.0" font-size="9" fill="#333">d=2 expanded #11</text>
+<rect x="556.4" y="147.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="561.4" y="162.0">D......</text>
+<text x="561.4" y="175.0">N......</text>
+<text x="561.4" y="188.0">-......</text>
+<text x="561.4" y="203.0" font-size="9" fill="#333">d=1 expanded #1</text>
+<rect x="973.6" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="978.6" y="269.0">D-.....</text>
+<text x="978.6" y="282.0">NN.....</text>
+<text x="978.6" y="295.0">-D.....</text>
+<text x="978.6" y="310.0" font-size="9" fill="#333">d=2 expanded #10</text>
+<rect x="973.6" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="978.6" y="376.0">D-D....</text>
+<text x="978.6" y="389.0">NN-....</text>
+<text x="978.6" y="402.0">-DN....</text>
+<text x="978.6" y="417.0" font-size="9" fill="#333">d=3 expanded #39</text>
+<rect x="735.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="740.2" y="269.0">DN.....</text>
+<text x="740.2" y="282.0">N-.....</text>
+<text x="740.2" y="295.0">-D.....</text>
+<text x="740.2" y="310.0" font-size="9" fill="#333">d=2 expanded #9</text>
+<rect x="854.4" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="859.4" y="376.0">DN-....</text>
+<text x="859.4" y="389.0">N-N....</text>
+<text x="859.4" y="402.0">-DD....</text>
+<text x="859.4" y="417.0" font-size="9" fill="#333">d=3 expanded #38</text>
+<rect x="735.2" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="740.2" y="376.0">DNN....</text>
+<text x="740.2" y="389.0">N--....</text>
+<text x="740.2" y="402.0">-DD....</text>
+<text x="740.2" y="417.0" font-size="9" fill="#333">d=3 expanded #37</text>
+<rect x="616.0" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="621.0" y="376.0">DN-....</text>
+<text x="621.0" y="389.0">N-D....</text>
+<text x="621.0" y="402.0">-DN....</text>
+<text x="621.0" y="417.0" font-size="9" fill="#333">d=3 expanded #36</text>
+<rect x="437.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="442.2" y="269.0">DD.....</text>
+<text x="442.2" y="282.0">N-.....</text>
+<text x="442.2" y="295.0">-N.....</text>
+<text x="442.2" y="310.0" font-size="9" fill="#333">d=2 expanded #8</text>
+<rect x="496.8" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="501.8" y="376.0">DD-....</text>
+<text x="501.8" y="389.0">N-D....</text>
+<text x="501.8" y="402.0">-NN....</text>
+<text x="501.8" y="417.0" font-size="9" fill="#333">d=3 expanded #35</text>
+<rect x="377.6" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="382.6" y="376.0">DDD....</text>
+<text x="382.6" y="389.0">N--....</text>
+<text x="382.6" y="402.0">-NN....</text>
+<text x="382.6" y="417.0" font-size="9" fill="#333">d=3 expanded #34</text>
+<rect x="139.2" y="254.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="144.2" y="269.0">DD.....</text>
+<text x="144.2" y="282.0">NN.....</text>
+<text x="144.2" y="295.0">--.....</text>
+<text x="144.2" y="310.0" font-size="9" fill="#333">d=2 expanded #7</text>
+<rect x="258.4" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="263.4" y="376.0">DD-....</text>
+<text x="263.4" y="389.0">NNN....</text>
+<text x="263.4" y="402.0">--D....</text>
+<text x="263.4" y="417.0" font-size="9" fill="#333">d=3 expanded #33</text>
+<rect x="139.2" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="144.2" y="376.0">DDN....</text>
+<text x="144.2" y="389.0">NN-....</text>
+<text x="144.2" y="402.0">--D....</text>
+<text x="144.2" y="417.0" font-size="9" fill="#333">d=3 expanded #32</text>
+<rect x="20.0" y="361.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="25.0" y="376.0">DDD....</text>
+<text x="25.0" y="389.0">NN-....</text>
+<text x="25.0" y="402.0">--N....</text>
+<text x="25.0" y="417.0" font-size="9" fill="#333">d=3 expanded #31</text>
+<rect x="20.0" y="468.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="25.0" y="483.0">DDDD...</text>
+<text x="25.0" y="496.0">NN--...</text>
+<text x="25.0" y="509.0">--NN...</text>
+<text x="25.0" y="524.0" font-size="9" fill="#333">d=4 expanded #97</text>
+<rect x="20.0" y="575.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="25.0" y="590.0">DDDD-..</text>
+<text x="25.0" y="603.0">NN--D..</text>
+<text x="25.0" y="616.0">--NNN..</text>
+<text x="25.0" y="631.0" font-size="9" fill="#333">d=5 expanded #279</text>
+<rect x="20.0" y="682.0" width="103.2" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="25.0" y="697.0">DDDD-D.</text>
+<text x="25.0" y="710.0">NN--DN.</text>
+<text x="25.0" y="723.0">--NNN-.</text>
+<text x="25.0" y="738.0" font-size="9" fill="#333">d=6 expanded #772</text>
+<rect x="20.0" y="789.0" width="103.2" height="61.0" rx="5" fill="#b7f0b1" stroke="#1a7f37" stroke-width="3"/>
+<text x="25.0" y="804.0">DDDD-DD</text>
+<text x="25.0" y="817.0">NN--DNN</text>
+<text x="25.0" y="830.0">--NNN--</text>
+<text x="25.0" y="845.0" font-size="9" fill="#333">d=7 goal</text>
+</svg>

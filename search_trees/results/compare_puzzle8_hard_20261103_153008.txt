@@ -1,0 +1,10 @@
+puzzle8      hard       bfs   graph    FOUND              16      16,171      5,925        3,449    0.084
+puzzle8      hard       ucs   graph    FOUND              16      25,401      9,373        5,046    0.174
+puzzle8      hard       dfs   graph    FOUND           33006     406,788    153,605       42,826    2.229
+puzzle8      hard       iddfs path     FOUND              16      65,662     23,984           15    0.604
+puzzle8      hard       bfs   none     LIMIT_REACHED       -   2,000,000    691,633    1,308,366   10.000
+puzzle8      veryhard   bfs   graph    FOUND              24     307,826    114,842       24,983    1.070
+puzzle8      veryhard   ucs   graph    FOUND              24     366,117    136,302       24,983    1.567
+puzzle8      veryhard   dfs   graph    FOUND           41328     124,758     44,911       29,986    0.540
+puzzle8      veryhard   iddfs path     LIMIT_REACHED       -   2,000,000    734,321           21    9.175
+puzzle8      veryhard   bfs   none     LIMIT_REACHED       -   2,000,000    716,598    1,283,400   10.641

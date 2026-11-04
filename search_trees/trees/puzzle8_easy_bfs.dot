@@ -1,0 +1,20 @@
+digraph SearchTree {
+  node [shape=box, style="rounded,filled", fontname="Courier"];
+  n0 [label="1 2 3\n4 5 6\n_ 7 8\n[expanded #0]", fillcolor="#cfe2ff", penwidth=3, color="#1a7f37"];
+  n0 -> n1 [label="U"];
+  n0 -> n2 [label="R", color="#1a7f37", penwidth=3];
+  n2 [label="1 2 3\n4 5 6\n7 _ 8\n[expanded #2]", fillcolor="#cfe2ff", penwidth=3, color="#1a7f37"];
+  n2 -> n6 [label="U"];
+  n2 -> n7 [label="L"];
+  n2 -> n8 [label="R", color="#1a7f37", penwidth=3];
+  n8 [label="1 2 3\n4 5 6\n7 8 _\n[goal]", fillcolor="#b7f0b1", penwidth=3, color="#1a7f37"];
+  n7 [label="1 2 3\n4 5 6\n_ 7 8\n[duplicate]", fillcolor="#eeeeee"];
+  n6 [label="1 2 3\n4 _ 6\n7 5 8\n[frontier]", fillcolor="#ffffff"];
+  n1 [label="1 2 3\n_ 5 6\n4 7 8\n[expanded #1]", fillcolor="#cfe2ff"];
+  n1 -> n3 [label="U"];
+  n1 -> n4 [label="D"];
+  n1 -> n5 [label="R"];
+  n5 [label="1 2 3\n5 _ 6\n4 7 8\n[frontier]", fillcolor="#ffffff"];
+  n4 [label="1 2 3\n4 5 6\n_ 7 8\n[duplicate]", fillcolor="#eeeeee"];
+  n3 [label="_ 2 3\n1 5 6\n4 7 8\n[frontier]", fillcolor="#ffffff"];
+}

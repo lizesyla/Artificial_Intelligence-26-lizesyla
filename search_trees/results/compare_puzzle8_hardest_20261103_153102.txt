@@ -1,0 +1,10 @@
+puzzle8      hardest    bfs   graph    FOUND              31     483,564    181,347       25,134    3.256
+puzzle8      hardest    ucs   graph    FOUND              31     483,837    181,438       25,134    2.977
+puzzle8      hardest    dfs   graph    FOUND           40757     122,800     44,185       29,648    0.573
+puzzle8      hardest    iddfs path     LIMIT_REACHED       -   2,000,000    732,666           21    9.077
+puzzle8      hardest    bfs   none     LIMIT_REACHED       -   2,000,000    712,551    1,287,448    9.996
+puzzle8      unsolvable bfs   graph    NO_SOLUTION         -     483,841    181,440       24,054    1.691
+puzzle8      unsolvable ucs   graph    NO_SOLUTION         -     483,841    181,440       24,054    2.669
+puzzle8      unsolvable dfs   graph    NO_SOLUTION         -     483,841    181,440       42,913    1.925
+puzzle8      unsolvable iddfs path     LIMIT_REACHED       -   2,000,000    729,736           20    8.315
+puzzle8      unsolvable bfs   none     LIMIT_REACHED       -   2,000,000    691,633    1,308,366   10.519

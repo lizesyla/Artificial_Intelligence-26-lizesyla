@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="806" height="345" font-family="Courier New, monospace" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="18" font-family="Helvetica" font-size="14">8-puzzle easy - IDDFS, last iteration (L = 2)</text>
+<line x1="403.2" y1="101.0" x2="207.6" y2="147.0" stroke="#888" stroke-width="1"/>
+<text x="308.4" y="124.0" font-size="10" fill="#555">U</text>
+<line x1="403.2" y1="101.0" x2="598.8" y2="147.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="504.0" y="124.0" font-size="10" fill="#555">R</text>
+<line x1="598.8" y1="208.0" x2="468.4" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="536.6" y="231.0" font-size="10" fill="#555">U</text>
+<line x1="598.8" y1="208.0" x2="598.8" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="601.8" y="231.0" font-size="10" fill="#555">L</text>
+<line x1="598.8" y1="208.0" x2="729.2" y2="254.0" stroke="#1a7f37" stroke-width="3"/>
+<text x="667.0" y="231.0" font-size="10" fill="#555">R</text>
+<line x1="207.6" y1="208.0" x2="77.2" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="145.4" y="231.0" font-size="10" fill="#555">U</text>
+<line x1="207.6" y1="208.0" x2="207.6" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="210.6" y="231.0" font-size="10" fill="#555">D</text>
+<line x1="207.6" y1="208.0" x2="338.0" y2="254.0" stroke="#888" stroke-width="1"/>
+<text x="275.8" y="231.0" font-size="10" fill="#555">R</text>
+<rect x="346.0" y="40.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="351.0" y="55.0">1 2 3</text>
+<text x="351.0" y="68.0">4 5 6</text>
+<text x="351.0" y="81.0">_ 7 8</text>
+<text x="351.0" y="96.0" font-size="9" fill="#333">d=0 expanded #1</text>
+<rect x="541.6" y="147.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#1a7f37" stroke-width="3"/>
+<text x="546.6" y="162.0">1 2 3</text>
+<text x="546.6" y="175.0">4 5 6</text>
+<text x="546.6" y="188.0">7 _ 8</text>
+<text x="546.6" y="203.0" font-size="9" fill="#333">d=1 expanded #3</text>
+<rect x="672.0" y="254.0" width="114.4" height="61.0" rx="5" fill="#b7f0b1" stroke="#1a7f37" stroke-width="3"/>
+<text x="677.0" y="269.0">1 2 3</text>
+<text x="677.0" y="282.0">4 5 6</text>
+<text x="677.0" y="295.0">7 8 _</text>
+<text x="677.0" y="310.0" font-size="9" fill="#333">d=2 goal</text>
+<rect x="541.6" y="254.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="546.6" y="269.0">1 2 3</text>
+<text x="546.6" y="282.0">4 5 6</text>
+<text x="546.6" y="295.0">_ 7 8</text>
+<text x="546.6" y="310.0" font-size="9" fill="#333">d=2 duplicate</text>
+<rect x="411.2" y="254.0" width="114.4" height="61.0" rx="5" fill="#e8d5f5" stroke="#555" stroke-width="1"/>
+<text x="416.2" y="269.0">1 2 3</text>
+<text x="416.2" y="282.0">4 _ 6</text>
+<text x="416.2" y="295.0">7 5 8</text>
+<text x="416.2" y="310.0" font-size="9" fill="#333">d=2 cutoff</text>
+<rect x="150.4" y="147.0" width="114.4" height="61.0" rx="5" fill="#cfe2ff" stroke="#555" stroke-width="1"/>
+<text x="155.4" y="162.0">1 2 3</text>
+<text x="155.4" y="175.0">_ 5 6</text>
+<text x="155.4" y="188.0">4 7 8</text>
+<text x="155.4" y="203.0" font-size="9" fill="#333">d=1 expanded #2</text>
+<rect x="280.8" y="254.0" width="114.4" height="61.0" rx="5" fill="#e8d5f5" stroke="#555" stroke-width="1"/>
+<text x="285.8" y="269.0">1 2 3</text>
+<text x="285.8" y="282.0">5 _ 6</text>
+<text x="285.8" y="295.0">4 7 8</text>
+<text x="285.8" y="310.0" font-size="9" fill="#333">d=2 cutoff</text>
+<rect x="150.4" y="254.0" width="114.4" height="61.0" rx="5" fill="#eeeeee" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="155.4" y="269.0">1 2 3</text>
+<text x="155.4" y="282.0">4 5 6</text>
+<text x="155.4" y="295.0">_ 7 8</text>
+<text x="155.4" y="310.0" font-size="9" fill="#333">d=2 duplicate</text>
+<rect x="20.0" y="254.0" width="114.4" height="61.0" rx="5" fill="#e8d5f5" stroke="#555" stroke-width="1"/>
+<text x="25.0" y="269.0">_ 2 3</text>
+<text x="25.0" y="282.0">1 5 6</text>
+<text x="25.0" y="295.0">4 7 8</text>
+<text x="25.0" y="310.0" font-size="9" fill="#333">d=2 cutoff</text>
+</svg>

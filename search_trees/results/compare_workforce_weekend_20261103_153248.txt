@@ -1,0 +1,4 @@
+workforce    weekend    bfs   graph    FOUND               7     370,803     83,648      287,160   27.764
+workforce    weekend    dfs   graph    FOUND               7          94         16           78    0.006
+workforce    weekend    iddfs path     FOUND               7     475,181    104,302           80   32.505
+workforce    weekend    ucs   graph    LIMIT_REACHED       -     375,808    112,833      287,160   40.757
