@@ -1,0 +1,46 @@
+========================================================================
+SUDOKU - BFS WITH BACKTRACKING
+Run at 2026-10-29 17:54:16, Python 3.10.12
+========================================================================
+easy4      BFS first all   SOLVED         sol=1    gen=        11 dead=        0 maxQ=        1 t=   0.000s 
+easy4      DFS first all   SOLVED         sol=1    gen=        11 dead=        0 maxQ=        1 t=   0.000s 
+easy4      BFS mrv   all   SOLVED         sol=1    gen=        11 dead=        0 maxQ=        1 t=   0.000s 
+easy4      DFS mrv   all   SOLVED         sol=1    gen=        11 dead=        0 maxQ=        1 t=   0.000s 
+easy4      BFS first first SOLVED         sol=1    gen=        11 dead=        0 maxQ=        1 t=   0.000s 
+easy4      DFS first first SOLVED         sol=1    gen=        11 dead=        0 maxQ=        1 t=   0.000s 
+easy6      BFS first all   SOLVED         sol=1    gen=        67 dead=       13 maxQ=       13 t=   0.000s 
+easy6      DFS first all   SOLVED         sol=1    gen=        67 dead=       13 maxQ=        7 t=   0.000s 
+easy6      BFS mrv   all   SOLVED         sol=1    gen=        25 dead=        0 maxQ=        1 t=   0.001s 
+easy6      DFS mrv   all   SOLVED         sol=1    gen=        25 dead=        0 maxQ=        1 t=   0.001s 
+easy6      BFS first first SOLVED         sol=1    gen=        67 dead=       13 maxQ=       13 t=   0.000s 
+easy6      DFS first first SOLVED         sol=1    gen=        31 dead=        0 maxQ=        7 t=   0.000s 
+hard6      BFS first all   SOLVED         sol=1    gen=        78 dead=       14 maxQ=        8 t=   0.000s 
+hard6      DFS first all   SOLVED         sol=1    gen=        78 dead=       14 maxQ=        7 t=   0.000s 
+hard6      BFS mrv   all   SOLVED         sol=1    gen=        27 dead=        0 maxQ=        1 t=   0.000s 
+hard6      DFS mrv   all   SOLVED         sol=1    gen=        27 dead=        0 maxQ=        1 t=   0.001s 
+hard6      BFS first first SOLVED         sol=1    gen=        78 dead=       14 maxQ=        8 t=   0.000s 
+hard6      DFS first first SOLVED         sol=1    gen=        38 dead=        2 maxQ=        7 t=   0.000s 
+wiki9      BFS first all   SOLVED         sol=1    gen=     4,632 dead=    1,371 maxQ=      738 t=   0.026s 
+wiki9      DFS first all   SOLVED         sol=1    gen=     4,632 dead=    1,371 maxQ=       15 t=   0.023s 
+wiki9      BFS mrv   all   SOLVED         sol=1    gen=        52 dead=        0 maxQ=        1 t=   0.007s 
+wiki9      DFS mrv   all   SOLVED         sol=1    gen=        52 dead=        0 maxQ=        1 t=   0.005s 
+wiki9      BFS first first SOLVED         sol=1    gen=     4,632 dead=    1,371 maxQ=      738 t=   0.023s 
+wiki9      DFS first first SOLVED         sol=1    gen=     4,217 dead=    1,246 maxQ=       15 t=   0.020s 
+escargot9  BFS first all   SOLVED         sol=1    gen=    18,885 dead=    5,376 maxQ=    1,716 t=   0.086s 
+escargot9  DFS first all   SOLVED         sol=1    gen=    18,885 dead=    5,376 maxQ=       20 t=   0.110s 
+escargot9  BFS mrv   all   SOLVED         sol=1    gen=     2,232 dead=      115 maxQ=       93 t=   0.145s 
+escargot9  DFS mrv   all   SOLVED         sol=1    gen=     2,232 dead=      115 maxQ=       10 t=   0.150s 
+escargot9  BFS first first SOLVED         sol=1    gen=    18,885 dead=    5,376 maxQ=    1,716 t=   0.089s 
+escargot9  DFS first first SOLVED         sol=1    gen=     8,987 dead=    2,576 maxQ=       20 t=   0.053s 
+clue17     BFS first all   LIMIT_REACHED  sol=0    gen= 5,000,000 dead=  403,317 maxQ=1,628,479 t=  14.571s node limit 5,000,000
+clue17     DFS first all   LIMIT_REACHED  sol=0    gen= 5,000,000 dead=1,516,931 maxQ=       46 t=  18.993s node limit 5,000,000
+clue17     BFS mrv   all   SOLVED         sol=1    gen=    73,483 dead=    9,309 maxQ=    5,210 t=   4.461s 
+clue17     DFS mrv   all   SOLVED         sol=1    gen=    73,483 dead=    9,309 maxQ=       22 t=   4.704s 
+clue17     BFS first first LIMIT_REACHED  sol=0    gen= 5,000,000 dead=  403,317 maxQ=1,628,479 t=  17.716s node limit 5,000,000
+clue17     DFS first first LIMIT_REACHED  sol=0    gen= 5,000,000 dead=1,516,931 maxQ=       46 t=  28.281s node limit 5,000,000
+nosol9     BFS first all   NO_SOLUTION    sol=0    gen=         1 dead=        1 maxQ=        0 t=   0.000s 
+nosol9     DFS first all   NO_SOLUTION    sol=0    gen=         1 dead=        1 maxQ=        0 t=   0.000s 
+nosol9     BFS mrv   all   NO_SOLUTION    sol=0    gen=         1 dead=        1 maxQ=        0 t=   0.000s 
+nosol9     DFS mrv   all   NO_SOLUTION    sol=0    gen=         1 dead=        1 maxQ=        0 t=   0.000s 
+nosol9     BFS first first NO_SOLUTION    sol=0    gen=         1 dead=        1 maxQ=        0 t=   0.000s 
+nosol9     DFS first first NO_SOLUTION    sol=0    gen=         1 dead=        1 maxQ=        0 t=   0.000s 

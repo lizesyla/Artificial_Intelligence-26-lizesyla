@@ -1,0 +1,30 @@
+========================================================================
+SUDOKU - BFS WITH BACKTRACKING
+Run at 2026-10-29 17:59:12, Python 3.10.12
+========================================================================
+Puzzle            : clue17 (9x9, boxes 3x3), givens = 17, empty = 64
++-------+-------+-------+
+| . . . | . . . | . . . |
+| . . . | . . 3 | . 8 5 |
+| . . 1 | . 2 . | . . . |
++-------+-------+-------+
+| . . . | 5 . 7 | . . . |
+| . . 4 | . . . | 1 . . |
+| . 9 . | . . . | . . . |
++-------+-------+-------+
+| 5 . . | . . . | . 7 3 |
+| . . 2 | . 1 . | . . . |
+| . . . | . 4 . | . . 9 |
++-------+-------+-------+
+Algorithm         : BFS   cell order: first   find all: False
+Limits            : max_nodes=None, max_frontier=3000000, time_limit=150.0s
+Status            : LIMIT_REACHED
+Explanation       : Stopped by a limit (frontier limit 3,000,000 (memory guard)). Nothing is proven about this puzzle.
+States generated  : 14,440,859
+States expanded   : 11,440,858
+Dead ends         : 2,117,889
+Max frontier size : 3,000,001
+Max depth         : 31 of 64
+Time              : 118.2372 s
+Peak memory       : 557.59 MB (tracemalloc)
+States per depth  : 1 7 43 196 799 2020 5295 10656 15348 8926 30940 63742 72028 112288 47026 17240 25100 23176 32556 29866 89598 139748 81232 265463 769758 1056793 1435609 1994573 2556087 1206290 2169891 2178564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

@@ -1,0 +1,24 @@
+test_bad_solutions (__main__.TestBoardAndValidation) ... ok
+test_invalid_puzzle_detected (__main__.TestBoardAndValidation) ... ok
+test_parse (__main__.TestBoardAndValidation) ... ok
+test_peers (__main__.TestBoardAndValidation) ... ok
+test_valid_solution (__main__.TestBoardAndValidation) ... ok
+test_builtin_levels_match_generator (__main__.TestLevels) ... ok
+test_builtin_levels_unique_and_solved_by_bfs (__main__.TestLevels) ... ok
+test_generated_puzzles_unique (__main__.TestLevels) ... ok
+test_random_solution_is_valid (__main__.TestLevels) ... ok
+test_6x6_unique_bfs (__main__.TestSearch) ... ok
+test_already_solved (__main__.TestSearch) ... ok
+test_bfs_and_dfs_agree (__main__.TestSearch) ... ok
+test_bfs_levels_are_in_order (__main__.TestSearch) ... ok
+test_easy4_bfs (__main__.TestSearch) ... ok
+test_empty4_has_288_solutions (__main__.TestSearch) ... ok
+test_hard_with_mrv (__main__.TestSearch) ... ok
+test_limit_reported (__main__.TestSearch) ... ok
+test_no_solution (__main__.TestSearch) ... ok
+test_wiki9_unique_bfs (__main__.TestSearch) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.359s
+
+OK

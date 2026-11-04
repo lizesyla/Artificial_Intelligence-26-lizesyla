@@ -1,0 +1,47 @@
+========================================================================
+SUDOKU - BFS WITH BACKTRACKING
+Run at 2026-10-29 17:59:04, Python 3.10.12
+========================================================================
+Puzzle            : easy (9x9, boxes 3x3), givens = 38, empty = 43
++-------+-------+-------+
+| . . 6 | . . . | . . . |
+| . 8 . | 7 . . | 4 . . |
+| 7 2 . | . . 6 | . 8 1 |
++-------+-------+-------+
+| . 4 2 | 1 5 9 | 3 . . |
+| . 7 . | . . . | 1 . 9 |
+| . . 9 | . . . | . 4 2 |
++-------+-------+-------+
+| 8 3 5 | . 6 . | . . 4 |
+| 2 6 7 | 9 1 . | 8 3 5 |
+| 9 1 . | . . 5 | 2 . . |
++-------+-------+-------+
+Algorithm         : DFS   cell order: first   find all: False
+Limits            : max_nodes=5000000, max_frontier=2000000, time_limit=120.0s
+Status            : SOLVED
+Explanation       : Solved. Solutions found: 1 (stopped at the first one; uniqueness not checked - use --all)
+States generated  : 1,488
+States expanded   : 1,479
+Dead ends         : 422
+Max frontier size : 13
+Max depth         : 43 of 43
+1st solution after: 1,488 generated states
+Time              : 0.0106 s
+Peak memory       : 0.01 MB (tracemalloc)
+States per depth  : 1 4 6 23 66 152 242 249 55 92 52 77 57 90 36 30 47 30 20 20 13 13 11 11 27 22 10 3 2 2 3 3 3 3 3 2 1 1 1 1 1 1 1 1
+
+Solution:
++-------+-------+-------+
+| 4 9 6 | 5 8 1 | 7 2 3 |
+| 5 8 1 | 7 2 3 | 4 9 6 |
+| 7 2 3 | 4 9 6 | 5 8 1 |
++-------+-------+-------+
+| 6 4 2 | 1 5 9 | 3 7 8 |
+| 3 7 8 | 6 4 2 | 1 5 9 |
+| 1 5 9 | 3 7 8 | 6 4 2 |
++-------+-------+-------+
+| 8 3 5 | 2 6 7 | 9 1 4 |
+| 2 6 7 | 9 1 4 | 8 3 5 |
+| 9 1 4 | 8 3 5 | 2 6 7 |
++-------+-------+-------+
+Independent validation: VALID
